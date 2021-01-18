@@ -1,0 +1,22 @@
+.button{
+    background-color: transparent;
+    border: none;
+    border-radius: 100px;
+    float: right;
+}
+.button img{
+    width: 40px;
+    height: 40px;
+}
+.info{
+    padding-top: 3%;
+}
+
+.info p{
+    margin-bottom: 0;
+    padding: 0;
+}
+
+.map{
+    padding-top: 2%;
+}

@@ -1,0 +1,16 @@
+.imagesList{
+    background-color: yellow;
+    box-sizing: border-box;
+    width: 100%;
+    margin:auto;
+}
+
+.item{
+    padding: 0;
+    margin: 0;
+}
+.item img{
+    width: 100%;
+    height: 100%;
+
+}
