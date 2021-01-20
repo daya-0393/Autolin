@@ -12,8 +12,8 @@ export default function Footer() {
                         <div className={cn("col", styles.socialMedia)}>
                             <h4>Síguenos</h4>
                             <hr className={`${styles.hr}`}></hr>
-                            <i className={cn("fab", "fa-facebook-f", styles.fab)}></i>
-                            <i className={cn("fab", "fa-instagram", styles.fab)}></i>
+                            <a href="#"><i className={cn("fab", "fa-facebook-f", styles.fab)}></i></a>
+                            <a href="#"><i className={cn("fab", "fa-instagram", styles.fab)}></i></a>
                         </div>
                         <div className={cn("col", styles.info)}>
                             <h4>Contáctenos</h4>
@@ -28,9 +28,13 @@ export default function Footer() {
                     </div>
                 </div>
                 <div className={cn("col-4", styles.right)}>
+
                     <div className={cn("row", styles.arrow)}>
-                        <i className={cn("fas", "fa-chevron-up", styles.fas)}></i>
+                        <a href="#">
+                            <i className={cn("fas", "fa-chevron-up", styles.fas)}></i>
+                        </a>
                     </div>
+
                 </div>
             </div>
         </footer>

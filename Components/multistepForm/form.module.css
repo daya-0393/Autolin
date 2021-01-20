@@ -1,0 +1,30 @@
+.container{
+max-width: 550px;
+min-height: 550px;
+padding: 6% 10%;
+margin: 5% auto;
+}
+
+.container Button{
+  margin-top: 30px;
+  background-color: #339933;
+  border: #339933;
+}
+
+.form{
+  min-height: 250px;
+}
+
+.subHeading{
+  padding-bottom: 10%;
+}
+
+.form-check{
+  margin: 20px 0;
+}
+
+@media(max-width: 590px) {
+  .container{
+      width: 100%;
+  }
+}

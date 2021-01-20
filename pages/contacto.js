@@ -17,7 +17,7 @@ export default function Contact(){
             </Head>
 
             <Header></Header>
-            <main className="container">
+            <main className={cn("container", styles.container)}>
                 <div className="row">
                     <div className="col">
                         <div className={styles.map}>

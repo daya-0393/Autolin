@@ -1,9 +1,10 @@
 import Form from 'react-bootstrap/Form'
 import styles from './form.module.css'
+import cn from 'classnames'
 
 export default function ContactForm(){
     return(
-        <Form className={styles.form}>
+        <Form className={cn("shadow-lg" , styles.form)}>
             <h1 className={styles.subHeading}>Contáctenos</h1>
             <div class="mb-3">
                 <label for="formGroupExampleInput" class="form-label">Nombre completo</label>
