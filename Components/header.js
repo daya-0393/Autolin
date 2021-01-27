@@ -19,8 +19,8 @@ export default function Header(){
                     <div className={cn("collapse", "navbar-collapse", styles["navbar-collapse"])} id="navbarNavAltMarkup">
                         <div className="navbar-nav"> 
                             <Link href="/"><a className="nav-link" aria-current="page">Inicio</a></Link>
-                            <a className="nav-link" href="#">Servicios</a>
-                            <a className="nav-link" href="#">Nuestro trabajo</a>       
+                            <a className="nav-link" href="#services">Servicios</a>
+                            <a className="nav-link" href="#work">Nuestro trabajo</a>       
                             <Link href="/cotizacion"><a className="nav-link">Cotizacion</a></Link>
                             <Link href="/contacto"><a className="nav-link">Contáctenos</a></Link>
                         </div>

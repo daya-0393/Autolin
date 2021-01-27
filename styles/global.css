@@ -1,9 +1,9 @@
-/****** GENERAL *****/
-.container{
-    max-width: 1300PX;
-    padding-top: 5%;
-    padding-bottom: 5%;
+@import "../node_modules/react-image-gallery/styles/css/image-gallery.css";
+
+.container h1{
+    padding: 5%;
 }
+
 .heading{
     margin:auto;
     text-align: center;
@@ -54,28 +54,8 @@
     text-shadow: 1px 1px 2px black;
     font-weight: bold;
 }
-
-
-
-
-/*********************************************************/
-/*********************** HOME ***************************/
-/*******************************************************/
-
-/***** BENEFICIOS *****/
-.benefitsSection{
-    margin: 0;
-    text-align: center; 
+.modal-body{
+    padding: 0;
+    width: 1200px;
+    border: 1px solid red;
 }
-.benefitsImage{
-    width: 25%;
-}
-.col-lg-4{
-    margin: 2% 0;
-}
-.col-lg-4 p{
-    width: 90%;
-    margin:auto;
-}
-
-/***** SERVICIOS *****/

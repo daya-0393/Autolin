@@ -1,0 +1,17 @@
+.benefitsSection{
+    margin: 0;
+    text-align: center; 
+}
+.benefitsSection h2{
+    padding: 5%;
+}
+.benefitsImage{
+    width: 25%;
+}
+.col-lg-4{
+    margin: 2% 0;
+}
+.col-lg-4 p{
+    width: 90%;
+    margin:auto;
+}

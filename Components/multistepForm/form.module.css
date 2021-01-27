@@ -5,10 +5,18 @@ padding: 6% 10%;
 margin: 5% auto;
 }
 
-.container Button{
-  margin-top: 30px;
+.dirBtns{
+  padding-top: 5%;
+}
+
+.dirBtns Button{
+
   background-color: #339933;
   border: #339933;
+}
+.dirBtns Button:hover{
+  background-color: #40bf40;
+  border: #40bf40;
 }
 
 .form{
@@ -21,6 +29,9 @@ margin: 5% auto;
 
 .form-check{
   margin: 20px 0;
+}
+.sendBtn{
+  float:right;
 }
 
 @media(max-width: 590px) {

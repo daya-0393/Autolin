@@ -1,0 +1,59 @@
+.modal{
+    height: 100%;
+    padding: 0;
+}
+.container{
+    width: 100%;
+    padding: 25% 0%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.content{
+    width: 30%;
+    height: 93%;
+    position: absolute;
+    background-color: white;
+    padding: 1%;
+}
+.content h1{
+    font-size: 4rem;
+    margin: 0;
+    padding: 0;
+}
+.content a{
+    margin-top: 10%;
+}
+.content p{
+    width: 90%;
+}
+
+/**** CONTENT STYLE BY ID ***/
+.pintura{
+    top: 3%;
+    left: 2%;
+}
+.llantas{
+    top: 3%;
+    right: 2%;
+}
+.lubricentro{
+    top: 3%;
+    left: 2%;
+}
+.ac{
+    top: 3%;
+    left: 2%;
+}
+.general{
+    top: 3%;
+    right: 2%;
+}
+.muflas{
+    bottom: 3%;
+    right: 2%
+}
+
+.modal-body{
+    padding: 0;
+}

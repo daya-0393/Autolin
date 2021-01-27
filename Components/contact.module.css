@@ -1,6 +1,10 @@
 .container{
     padding: 7% 0;
 }
+.alert{
+    width: 80%;
+    float: right;
+}
 .button{
     background-color: transparent;
     border: none;
@@ -11,9 +15,6 @@
     width: 40px;
     height: 40px;
 }
-.info{
-    padding-top: 3%;
-}
 
 .info p{
     margin-bottom: 0;
@@ -23,3 +24,4 @@
 .map{
     padding-top: 2%;
 }
+

@@ -1,18 +1,68 @@
 import Head from 'next/head'
 import { MultiStepForm, Step } from 'react-multi-form';
 import PersonalInfo from './personalInfo'
-import CarInfo from './carInfo'
+import Quotation from './quotation'
 import ServiceCheck from './serviceCheck'
-import Confirmation from './confirmation'
 import styles from './form.module.css'
-import Button from 'react-bootstrap/Button'
 import cn from 'classnames'
-
+import {useState} from 'react'
+import emailjs from 'emailjs-com'
 
 export default function MSForm(){
-    const [active, setActive] = React.useState(1)
+    const [active, setActive] = React.useState(1);
+    const [showAlert, setShowAlert] = useState(false);
+    const [alert, setAlert] = useState("");
+    const [message, setMessage] = useState("");
+    const [inputValues, setInputValues] = useState({});
+
+
+
+    function setFormData(){
+        const inputValues = {
+            service: localStorage.getItem("service"),
+            name: localStorage.getItem("name"),
+            email: localStorage.getItem("email"),
+            phone: localStorage.getItem("phone"),
+            model: localStorage.getItem("model"),
+            year: localStorage.getItem("year"),
+            message: localStorage.getItem("message")
+        };
+        return inputValues;
+    }
+
+    function sendEmail(e) {
+        e.preventDefault();
+        const dataObject = setFormData();
+        emailjs.send('service_w7xcwkk', 'template_owp6ne8', dataObject, 'user_opD6c7JPY3hWfFA8RPNFD')
+          .then((result) => {
+                setAlert("alert-success");
+                setMessage("El mensaje ha sido enviado exitosamente");
+                setShowAlert(true);
+                console.log(result.text);
+          }, (error) => {
+                setAlert("alert-danger");
+                setMessage(error.text);
+                setShowAlert(true);
+                console.log(error.text);
+          });
+      }
+
+    function setData(){
+        const dataObject = setFormData();
+        console.log(dataObject);
+        setTimeout(()=>{
+            console.log(dataObject);
+        }, 5000)
+    }
+
     return (
         <div className={cn("container", "shadow-lg" ,styles.container)}>
+            {showAlert &&
+                <div className={cn(`alert ${alert} alert-dismissible fade show`, styles.alert)} role="alert">
+                    {message}
+                    <button type="button" className="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                </div>
+            }
             <h1 className={styles.subHeading} >Cotizar servicio</h1>
             <MultiStepForm activeStep={active}>
                 <Step label='Servicio'>
@@ -22,24 +72,25 @@ export default function MSForm(){
                     <PersonalInfo/>
                 </Step>
                 <Step label='Consulta'>
-                    <CarInfo />
-                </Step>
-                <Step label='Confirmación'>
-                    <Confirmation/>
+                    <Quotation/>
                 </Step>
             </MultiStepForm>
-
-            {active !== 1 && (
-                <Button onClick={() => setActive(active - 1)}>Volver</Button>
-            )}
-            {active !== 3 && (
-                <Button
-                onClick={() => setActive(active + 1)}
-                style={{ float: 'right' }}
-                >
-                Siguiente
-                </Button>
-            )}
+            <div className={styles.dirBtns}>
+                {active !== 1 && (
+                    <button className="btn btn-success" onClick={() => setActive(active - 1)}>Volver</button>
+                )}
+                {active !== 3 && (
+                    <button
+                    className="btn btn-success" onClick={() => setActive(active + 1)}
+                    style={{ float: 'right' }}
+                    >
+                    Siguiente
+                    </button>
+                )}
+                {active == 3 &&(
+                    <button className={cn("btn btn-success", styles.sendBtn)} onClick={sendEmail}>Enviar</button>
+                )}
+            </div>
         </div>
     )
 }

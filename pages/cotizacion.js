@@ -5,7 +5,6 @@ import cn from 'classnames'
 import MSForm from '../Components/multistepForm/msForm'
 import styles from '../Components/cotizacion.module.css'
 
-
 export default function Cotizacion(){
 
     return(
@@ -25,7 +24,7 @@ export default function Cotizacion(){
                         <img src="images/taller1.jpg"></img>
                     </div>
                     <div className={cn("col", styles["col-right"])} id="col-right">
-                        <MSForm ></MSForm>
+                        <MSForm></MSForm>
                     </div>
                 </div>
             </main>
