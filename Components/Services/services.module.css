@@ -1,14 +1,11 @@
-.col-lg-3{
-    min-height: 210px;
-    text-align: center;
-    padding: 5% 0;
-    margin: 5px;
+.card{
+    position: relative;
     color: white;
     background-size: cover;
     background-position: bottom;
-    border: none;
+    padding: 30% 0;
+    border: 0;
 }
-
 .color-overlay{
     position: absolute;
     top: 0;
@@ -18,26 +15,38 @@
     background-color: #404040;
     opacity: 0.5;
 }
-.col-lg-3:hover .color-overlay{
+.card:hover .color-overlay{
     opacity: 0.8;
 }
 
-.col-lg-3 h4{
+.card h4{
     font-family: 'Quicksand', sans-serif;
-    z-index: 999;
-    font-weight: 600;
+    font-size: 1.5vw;
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    margin-top: -20px;
 }
-.col-lg-3 Button{
-    z-index: 999;
+.card Button{
+    position: absolute;
     width: 30%;
-    display: block;
+    margin-left: 35%;
+    margin-top: 10%;
+    font-size: 1vw;
+}
+.serviceContent{
+    padding: 5% 0;
+    width: 80%;
+    border: 1px solid;
     margin: auto;
 }
-
-.hidden{
-    display: none;
+.serviceContent .col{
+    padding: 0;
+    margin:0;
 }
-
-.block{
-    display: block;
+.serviceContent img{
+    width: 100%;
+}
+.serviceContent p{
+    width: 80%;
 }

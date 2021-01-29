@@ -6,6 +6,8 @@ import Services from '../Components/Services/services'
 import Button from 'react-bootstrap/Button'
 import React, {useState} from 'react'
 import Benefits from '../Components/Benefits/benefits'
+import styles from '../styles/index.module.css'
+import cn from 'classnames'
 
 
 export default function Index() {
@@ -22,15 +24,15 @@ export default function Index() {
           <script src="https://kit.fontawesome.com/da33aea8dd.js" crossorigin="anonymous"></script>
         </Head>
 
-        <div className="whatsapp">
+        <div className={styles.whatsapp}>
           <a href="#"><img src="images/icons/whatsapp.png"></img></a>
         </div>
 
         <Header></Header>
         
-        <div className="bd-img">
-          <div className="cover-info">
-            <div className="row cover-heading">
+        <div className={styles["bd-img"]}>
+          <div className={styles["cover-info"]}>
+            <div className={cn("row", styles["cover-heading"])}>
               <h1>Esto es una</h1>
               <h1>prueba</h1>
             </div>
@@ -39,18 +41,17 @@ export default function Index() {
         </div>
         
         <main className="container">
-          <div className="benefits">
-            <h1 className="heading">Beneficios</h1>
+          <div className={styles.section} id="benefits">
             <Benefits></Benefits>
           </div>
 
-          <div className="row services"  id="services">
-              <h1 className="heading">Servicios</h1>
+          <div className={cn("row", styles.section)} id="services">
+              <h1 className={styles.heading}>Servicios</h1>
               <Services></Services>
           </div>
 
-          <div className="row gallery" id="work"> 
-            <h1 className="heading">Nuestro trabajo</h1>
+          <div className={cn("row", styles.section)} id="work"> 
+            <h1 className={styles.heading}>Nuestro trabajo</h1>
             <Gallery></Gallery>
           </div>
         </main>

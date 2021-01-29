@@ -1,61 +1,6 @@
 @import "../node_modules/react-image-gallery/styles/css/image-gallery.css";
 
-.container h1{
-    padding: 5%;
-}
-
-.heading{
-    margin:auto;
-    text-align: center;
-    font-size: 3rem;
-}
-
-.whatsapp{
-    position: fixed;
-    z-index: 999;
-    bottom: 3%;
-    right: 3%;
-}
-.whatsapp img{
-    width: 50px;
-}
-
-.bd-img{
-    background-image: url("/images/cover1.jpeg");
-    background-position: top;
-    background-size: cover;
-    padding: 25% 0;
-}
-.cover-info{
-    display: flex;
-    flex-direction: column;
-    width: 30%;
-    float: right;
-    margin-right: 10%;
-    margin-top: -10%;
-}
-.cover-info Button{
-    width: 25%;
-    display: block;
-    margin: auto;
-    background-color: #10466A;
-    border: none;
-    font-size: 15px;
-}
-.cover-heading{
-    margin: 0;
-    text-align: center;
-    padding-bottom: 5%;
-}
-
-.cover-heading h1{
-    color: white;
-    font-size: 3.5rem;
-    text-shadow: 1px 1px 2px black;
-    font-weight: bold;
-}
-.modal-body{
+.row{
     padding: 0;
-    width: 1200px;
-    border: 1px solid red;
+    margin: 0;
 }

@@ -33,6 +33,17 @@ export default function Contact(){
           e.target.reset();
       }
 
+    function openMap(e){
+        console.log(e.target)
+        if(e.target.name == "waze"){
+            window.open("https://ul.waze.com/ul?ll=9.96221227%2C-84.19421911&navigate=yes&zoom=16&utm_campaign=default&utm_source=waze_website&utm_medium=lm_share_location");
+            console.log(e.target.name)
+        }else if(e.target.name == "maps"){
+            window.open("https://goo.gl/maps/ZBhNgoXJG1EEuX4Z8");
+            console.log(e.target.name)
+        }
+    }
+
     return(
         <div className="body">
             <Head>
@@ -57,8 +68,8 @@ export default function Contact(){
                                 <p><b>Horario: </b>Lunes - Domingo, 7:00am - 7:00pm</p>
                             </div>
                             <div className={cn("col", styles.mapsBtns)}>
-                                <Button className={styles.button}><img src="images/icons/waze.png"></img></Button>
-                                <Button className={styles.button}><img src="images/icons/google-maps.png"></img></Button>
+                                <Button className={styles.button} onClick={openMap} name="waze" data-bs-toggle="tooltip" data-bs-placement="top" title="Abrir en waze"><img src="images/icons/waze.png" name="Waze"></img></Button>
+                                <Button className={styles.button} onClick={openMap} name="maps"><img src="images/icons/google-maps.png" name="maps" data-bs-toggle="tooltip" data-bs-placement="top" title="Abrir en Google Maps"></img></Button>
                             </div>
                         </div>
                     </div>

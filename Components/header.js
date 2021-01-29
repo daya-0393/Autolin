@@ -9,7 +9,7 @@ export default function Header(){
             <nav className={cn("navbar", "fixed-top","navbar-expand-lg", "navbar-light", styles.navbar)}>
                 <div className={cn("container-fluid", styles["container-fluid"])}>
                     <Link href="/">
-                        <a className="navbar-brand">
+                        <a className={cn("navbar-brand", styles["navbar-brand"])}>
                             <img src="/images/Logo.png" className={`${styles.logo}`} alt="logo"></img>
                         </a>
                     </Link>
@@ -18,11 +18,11 @@ export default function Header(){
                     </button>
                     <div className={cn("collapse", "navbar-collapse", styles["navbar-collapse"])} id="navbarNavAltMarkup">
                         <div className="navbar-nav"> 
-                            <Link href="/"><a className="nav-link" aria-current="page">Inicio</a></Link>
-                            <a className="nav-link" href="#services">Servicios</a>
-                            <a className="nav-link" href="#work">Nuestro trabajo</a>       
-                            <Link href="/cotizacion"><a className="nav-link">Cotizacion</a></Link>
-                            <Link href="/contacto"><a className="nav-link">Contáctenos</a></Link>
+                            <Link href="/"><a className={cn("nav-link", styles["nav-link"])} aria-current="page">Inicio</a></Link>
+                            <a className={cn("nav-link", styles["nav-link"])}  href="#services">Servicios</a>
+                            <a className={cn("nav-link", styles["nav-link"])}  href="#work">Nuestro trabajo</a>       
+                            <Link href="/cotizacion"><a className={cn("nav-link", styles["nav-link"])} >Cotizacion</a></Link>
+                            <Link href="/contacto"><a className={cn("nav-link", styles["nav-link"])} >Contáctenos</a></Link>
                         </div>
                     </div>
                 </div>

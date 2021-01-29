@@ -1,9 +1,12 @@
 .benefitsSection{
-    margin: 0;
     text-align: center; 
+    width: 90%;
+    border: 1px solid red;
+    margin: auto;
 }
-.benefitsSection h2{
+.subheading{
     padding: 5%;
+    font-size: 2vw;
 }
 .benefitsImage{
     width: 25%;

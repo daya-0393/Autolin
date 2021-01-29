@@ -12,7 +12,7 @@ export default function Footer() {
                         <div className={cn("col", styles.socialMedia)}>
                             <h4>Síguenos</h4>
                             <hr className={`${styles.hr}`}></hr>
-                            <a href="#"><i className={cn("fab", "fa-facebook-f", styles.fab)}></i></a>
+                            <a href="https://www.facebook.com/autolin2018/" target="_blank"><i className={cn("fab", "fa-facebook-f", styles.fab)}></i></a>
                             <a href="#"><i className={cn("fab", "fa-instagram", styles.fab)}></i></a>
                         </div>
                         <div className={cn("col", styles.info)}>

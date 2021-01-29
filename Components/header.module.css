@@ -1,17 +1,22 @@
-.logo{
-    width: 60%;
-}
-
-.navbar-collapse{
-    justify-content: flex-end;
-    padding-right: 2%;
-}
-
-.container-fluid{
-    padding: 0 5%;
-}
-
 .navbar{
     box-shadow: 1px 1px 1px #d9d9d9;
     background-color: white;
 }
+.nav-link{
+    margin-right: 10px;
+    font-size: 1.1vw;
+}
+.container-fluid{
+    padding: 0 2%;
+}
+.navbar-collapse{
+    justify-content: flex-end;
+
+}
+.navbar-brand{
+    width: 20%;
+}
+.logo{
+    width: 100%;
+}
+
