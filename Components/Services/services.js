@@ -55,7 +55,7 @@ export default function Services(){
             <script src="https://cdnjs.cloudflare.com/ajax/libs/react/15.1.0/react.min.js"></script>
             <script src="https://cdnjs.cloudflare.com/ajax/libs/react/15.1.0/react-dom.min.js"></script>
             <script src="https://cdnjs.cloudflare.com/ajax/libs/react/0.13.1/react-with-addons.js"></script>
-            <div className="row row-cols-2 row-cols-sm-2 row-cols-lg-4 g-3">
+            <div className="row row-cols-1 row-cols-sm-2 row-cols-lg-4 g-3">
                 <Service type="pintura" title="Enderezado y pintura" url="/images/services/pintura.jpg" click={defineContentType}></Service>
                 <Service type="llantas" title="Llantera" url="images/services/llanta.jpg" click={defineContentType}></Service>
                 <Service type="lubricentro" title="Lubricentro" url="images/services/lubricentro.jpg" click={defineContentType}></Service>
