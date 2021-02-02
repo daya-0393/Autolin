@@ -34,19 +34,15 @@
     margin-top: 10%;
     font-size: 1vw;
 }
-.serviceContent{
-    padding: 5% 0;
-    width: 80%;
-    border: 1px solid;
-    margin: auto;
+.contentBox{
+    position: relative;
+    background-color: antiquewhite;
 }
-.serviceContent .col{
-    padding: 0;
-    margin:0;
-}
-.serviceContent img{
-    width: 100%;
-}
-.serviceContent p{
-    width: 80%;
+
+.closeBtn{
+    position: absolute;
+    top: 1%;
+    right: 1%;
+    background-color: transparent;
+    border: 0;
 }
