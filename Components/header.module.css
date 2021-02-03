@@ -11,7 +11,6 @@
 }
 .navbar-collapse{
     justify-content: flex-end;
-
 }
 .navbar-brand{
     width: 20%;
@@ -20,3 +19,11 @@
     width: 100%;
 }
 
+@media(max-width: 400px){
+    .navbar-brand{
+        width: 30%;
+    }
+    .nav-link{
+        font-size: 4vw;
+    }
+}

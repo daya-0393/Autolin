@@ -1,20 +1,28 @@
-.benefitsSection{
+.container{
     text-align: center; 
     width: 90%;
-    border: 1px solid red;
     margin: auto;
 }
 .subheading{
     padding: 5%;
     font-size: 2vw;
 }
-.benefitsImage{
+.item img{
     width: 25%;
 }
-.col-lg-4{
+.item{
     margin: 2% 0;
 }
-.col-lg-4 p{
+.item p{
     width: 90%;
     margin:auto;
+}
+
+@media(max-width: 400px){
+    .item{
+        margin: 5% 0;
+    }
+    .item img{
+        width: 20%;
+    }
 }

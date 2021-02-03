@@ -1,4 +1,3 @@
-import { cssNumber } from 'jquery'
 import Benefit from './benefit'
 import styles from './benefits.module.css'
 import cn from 'classnames'
@@ -6,7 +5,7 @@ import cn from 'classnames'
 export default function Benefits(){
     return(
 
-        <div className={cn("row", styles.benefitsSection)}>
+        <div className={cn("row", styles.container)}>
             <Benefit url="/images/icons/tools.png">
                 <h2 className={styles.subHeading}>Heading</h2>
                 <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>

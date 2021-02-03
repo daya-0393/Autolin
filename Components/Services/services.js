@@ -1,27 +1,15 @@
 import Service from './service'
 import {useRef, useState} from 'react'
 import React from 'react';
-import { makeStyles } from '@material-ui/core';
+import cn from 'classnames';
 import Paper from '@material-ui/core/Paper';
 import Collapse from '@material-ui/core/Collapse';
 import {content} from './content'
 import styles from './services.module.css'
-
-const useStyles = makeStyles((theme) => ({
-    root: {
-      height: 180,
-    },
-    container: {
-      display: 'flex',
-    },
-    paper: {
-      margin: theme.spacing(1),
-      position: 'relative'
-    }
-  }));
+import Col from 'react-bootstrap/Col';
+import Row from 'react-bootstrap/Row';
 
 export default function Services(){
-    const classes = useStyles();
     const [url, setUrl] = useState("e");
     const [heading, setHeading] = useState("e");
     const [text, setText] = useState("e");
@@ -51,7 +39,7 @@ export default function Services(){
     }
 
     return(
-        <div className="container">
+        <div className="container-fluid">
             <script src="https://cdnjs.cloudflare.com/ajax/libs/react/15.1.0/react.min.js"></script>
             <script src="https://cdnjs.cloudflare.com/ajax/libs/react/15.1.0/react-dom.min.js"></script>
             <script src="https://cdnjs.cloudflare.com/ajax/libs/react/0.13.1/react-with-addons.js"></script>
@@ -65,17 +53,21 @@ export default function Services(){
                 <Service type="carWash" title="Auto lavado" url="images/services/lavado.jpg" click={defineContentType}></Service>
                 <Service type="repuestos" title="Repuestos" url="images/services/car-parts.jpeg" click={defineContentType}></Service>
             </div>
-
-            <div className={classes.root} ref={serviceCont}>
-                <div className={classes.container}>
-                    <Collapse in={checked}>
-                        <Paper elevation={4} className={classes.paper}>
-                            <button className={styles.closeBtn} onClick={showContent}><i class="fas fa-minus"></i></button>
-                            <h1>{heading}</h1>
-                            <p>{text}</p>
-                        </Paper>
-                    </Collapse>
-                </div>
+            <div className={styles.root} ref={serviceCont}>
+                <Collapse in={checked}>
+                    <Paper elevation={4} className={styles.paper}>
+                    <button className={styles.closeBtn} onClick={showContent}><i class="fas fa-minus"></i></button>
+                        <Row className={cn("row-cols-1", styles.row)}>
+                            <Col className={styles.col}>
+                                <img src={url}></img>
+                            </Col>
+                            <Col className={styles.col}>
+                                <h1>{heading}</h1>
+                                <p>{text}</p>
+                            </Col>
+                        </Row>
+                    </Paper>
+                </Collapse>
             </div>
             
         </div>

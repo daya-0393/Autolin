@@ -1,12 +1,12 @@
 export const content = 
 { 
     "pintura": {
-        "url": "images/services/pintura.jpg", 
+        "url": "images/painting.jpg", 
         "heading": "Pintura", 
         "paragraph": "Nulla tristique ullamcorper neque, non mollis purus porta non. Proin sed purus sed sapien lobortis sagittis. Curabitur tellus nibh, posuere ac varius sed, vestibulum sed nunc."
     },
     "llantas": {
-        "url": "images/services/llanta.jpg", 
+        "url": "images/tire.jpg", 
         "heading": "Llantera", 
         "paragraph": "Nulla tristique ullamcorper neque, non mollis purus porta non. Proin sed purus sed sapien lobortis sagittis. Curabitur tellus nibh, posuere ac varius sed, vestibulum sed nunc."
     },
@@ -26,12 +26,12 @@ export const content =
         "paragraph": "Nulla tristique ullamcorper neque, non mollis purus porta non. Proin sed purus sed sapien lobortis sagittis. Curabitur tellus nibh, posuere ac varius sed, vestibulum sed nunc."
     },
     "muflas": {
-        "url": "images/services/muflas.jpg", 
+        "url": "images/muffler.jpg", 
         "heading": "Muflas", 
         "paragraph": "Nulla tristique ullamcorper neque, non mollis purus porta non. Proin sed purus sed sapien lobortis sagittis. Curabitur tellus nibh, posuere ac varius sed, vestibulum sed nunc."
     },
     "carWash": {
-        "url": "images/services/lavado.jpg", 
+        "url": "images/car-wash.jpg", 
         "heading": "Auto lavado", 
         "paragraph": "Nulla tristique ullamcorper neque, non mollis purus porta non. Proin sed purus sed sapien lobortis sagittis. Curabitur tellus nibh, posuere ac varius sed, vestibulum sed nunc."
     },

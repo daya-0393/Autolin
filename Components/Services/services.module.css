@@ -28,11 +28,14 @@
     margin-top: -20px;
 }
 .card Button{
+    background-color: #0088cc;
+    border: #0088cc;
     position: absolute;
     width: 30%;
     margin-left: 35%;
     margin-top: 10%;
     font-size: 1vw;
+    font-weight: 600;
 }
 .contentBox{
     position: relative;
@@ -46,3 +49,50 @@
     background-color: transparent;
     border: 0;
 }
+.root{
+    width: 90%;
+    margin: auto;
+}
+.root .paper{
+    position: relative;
+    padding: 5%;
+    margin: 5% 0;
+    border-top: 1px solid  #cccccc;
+    border-bottom: 1px solid  #cccccc;
+    box-shadow: none;
+}
+.root .paper .row{
+    width: 70%;
+    margin: auto;
+}
+.paper img{
+    width: 100%;
+}
+
+@media(max-width: 400px){
+    .card{
+        padding: 20% 0;    
+        background-position: center;
+    }
+    .card Button{
+        padding: 0;
+        font-size: 4vw;
+        background-color: white;
+        color: #0088cc;
+        width: 25%;
+        margin-left: 40%;
+    }
+    .card h4{
+        font-size: 7vw;
+    }
+    .root .paper .row{
+        width: 100%;
+    }
+    .paper .col{
+        text-align: center;
+    }
+    .paper img{
+        width: 75%;
+    }
+}
+
