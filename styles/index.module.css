@@ -2,13 +2,12 @@
     margin:auto;
     text-align: center;
     font-size: 3vw;
+    
 }
-
 .section{
-    padding: 8% 0;
+    padding: 5% 0;
     margin:auto;
 }
-
 .whatsapp{
     position: fixed;
     z-index: 999;
@@ -20,58 +19,61 @@
 }
 
 .bd-img{
+    position: relative;
     background-image: url("/images/cover1.jpeg");
     background-position: top;
     background-size: cover;
     padding: 25% 0;
-    margin-top: 80px;
+    margin-top: 50px;
 }
 .cover-info{
-    display: flex;
-    flex-direction: column;
-    width: 30%;
-    float: right;
-    margin-right: 10%;
-    margin-top: -10%;
+    position: absolute;
+    top: 20%;
+    right: 8%;
+    width: 35%;
+    text-align: center;
+    color: white;
+}
+.cover-info h1{
+    font-size: 5vw;
+    text-shadow: 1px 1px 2px #595959;
+    font-weight: bold;
+    margin-bottom: 10%;
 }
 .cover-info Button{
-    width: 25%;
+    width: 35%;
     display: block;
     margin: auto;
     background-color: #10466A;
     border: none;
-    font-size: 1vw;
-}
-.cover-heading{
-    margin: 0;
-    text-align: center;
-    padding-bottom: 5%;
+    font-size: 1.5vw;
 }
 
-.cover-heading h1{
-    color: white;
-    font-size: 5vw;
-    text-shadow: 1px 1px 2px #595959;
-    font-weight: bold;
-
-}
-.modal-body{
-    padding: 0;
-    width: 1200px;
+.work{
+    width: 50%;
 }
 
-@media(max-width: 400px){
+@media(max-width: 700px){
     .bd-img{
-        margin-top: 15%;
+        padding: 35% 0;
     }
     .cover-info{
-        width: 40%;
-        margin-right: 5%;
-    }
- 
-    .cover-info Button{
         width: 50%;
+        top: 20%;
+        right: 0;
+    }
+    .cover-info h1{
+        font-size: 6vw;
+    }
+    .cover-info Button{
+        width: 40%;
         padding: 1% 0;
         font-size: 3vw;
     }
+    .work{
+        width: 100%;
+    }
+}
+@media(max-width: 400px){
+    
 }

@@ -5,7 +5,7 @@ import Quotation from './quotation'
 import ServiceCheck from './serviceCheck'
 import styles from './form.module.css'
 import cn from 'classnames'
-import {useState} from 'react'
+import {useRef, useState, useEffect} from 'react'
 import emailjs from 'emailjs-com'
 
 export default function MSForm(){
@@ -14,8 +14,7 @@ export default function MSForm(){
     const [alert, setAlert] = useState("");
     const [message, setMessage] = useState("");
     const [inputValues, setInputValues] = useState({});
-
-
+    const container = useRef();
 
     function setFormData(){
         const inputValues = {
@@ -47,16 +46,16 @@ export default function MSForm(){
           });
       }
 
-    function setData(){
-        const dataObject = setFormData();
-        console.log(dataObject);
-        setTimeout(()=>{
-            console.log(dataObject);
-        }, 5000)
-    }
+    
+    /*useEffect(()=>{
+        if(screen.width <= 700){
+            container.current.classList.remove("shadow-lg");
+        }
+    })*/
+    
 
     return (
-        <div className={cn("container", "shadow-lg" ,styles.container)}>
+        <div className={cn("container", "shadow-lg" ,styles.container)} ref={container}>
             {showAlert &&
                 <div className={cn(`alert ${alert} alert-dismissible fade show`, styles.alert)} role="alert">
                     {message}

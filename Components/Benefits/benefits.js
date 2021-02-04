@@ -5,7 +5,7 @@ import cn from 'classnames'
 export default function Benefits(){
     return(
 
-        <div className={cn("row", styles.container)}>
+        <div className={cn("row row-cols-1 row-cols-3", styles.container)}>
             <Benefit url="/images/icons/tools.png">
                 <h2 className={styles.subHeading}>Heading</h2>
                 <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>

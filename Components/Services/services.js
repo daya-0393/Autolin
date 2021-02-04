@@ -6,8 +6,7 @@ import Paper from '@material-ui/core/Paper';
 import Collapse from '@material-ui/core/Collapse';
 import {content} from './content'
 import styles from './services.module.css'
-import Col from 'react-bootstrap/Col';
-import Row from 'react-bootstrap/Row';
+import Button from 'react-bootstrap/Button'
 
 export default function Services(){
     const [url, setUrl] = useState("e");
@@ -16,6 +15,7 @@ export default function Services(){
     const [type, setType] = useState("");
     const [checked, setChecked] = React.useState(false);
     const serviceCont = useRef();
+    const services = useRef();
 
     const setServiceContent = (type, callback) => {
         setUrl(content[type].url);
@@ -28,7 +28,14 @@ export default function Services(){
         setChecked((prev) => !prev);
         serviceCont.current.scrollIntoView({
             behavior: "smooth", 
-            block: "nearest"
+            block: "start"
+        })
+    }
+    const hideContent = () =>{
+        setChecked((prev) => !prev);
+        services.current.scrollIntoView({
+            behavior: "smooth", 
+            
         })
     }
 
@@ -39,11 +46,11 @@ export default function Services(){
     }
 
     return(
-        <div className="container-fluid">
+        <div className={cn("container-fluid", styles.outerContainer)} ref={services}>
             <script src="https://cdnjs.cloudflare.com/ajax/libs/react/15.1.0/react.min.js"></script>
             <script src="https://cdnjs.cloudflare.com/ajax/libs/react/15.1.0/react-dom.min.js"></script>
             <script src="https://cdnjs.cloudflare.com/ajax/libs/react/0.13.1/react-with-addons.js"></script>
-            <div className="row row-cols-1 row-cols-sm-2 row-cols-lg-4 g-3">
+            <div className={cn("row row-cols-1 row-cols-sm-2 row-cols-lg-4 g-3", styles.container)}>
                 <Service type="pintura" title="Enderezado y pintura" url="/images/services/pintura.jpg" click={defineContentType}></Service>
                 <Service type="llantas" title="Llantera" url="images/services/llanta.jpg" click={defineContentType}></Service>
                 <Service type="lubricentro" title="Lubricentro" url="images/services/lubricentro.jpg" click={defineContentType}></Service>
@@ -56,16 +63,13 @@ export default function Services(){
             <div className={styles.root} ref={serviceCont}>
                 <Collapse in={checked}>
                     <Paper elevation={4} className={styles.paper}>
-                    <button className={styles.closeBtn} onClick={showContent}><i class="fas fa-minus"></i></button>
-                        <Row className={cn("row-cols-1", styles.row)}>
-                            <Col className={styles.col}>
-                                <img src={url}></img>
-                            </Col>
-                            <Col className={styles.col}>
-                                <h1>{heading}</h1>
-                                <p>{text}</p>
-                            </Col>
-                        </Row>
+                        <div className={styles["color-overlay2"]}></div>
+                        <button className={styles.closeBtn} onClick={hideContent}><i class={cn("fas fa-minus", styles.fas)}></i></button>
+                        <div className={styles["cont-info"]}>
+                            <h1>{heading}</h1>
+                            <p>{text}</p>
+                            <button className={cn("btn btn-success", styles.btn)}>Cotizar servicio</button>
+                        </div>
                     </Paper>
                 </Collapse>
             </div>

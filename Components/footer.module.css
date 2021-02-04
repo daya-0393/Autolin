@@ -1,40 +1,63 @@
 .footer{
     background-color: #10466a;
-
-}
-.container{
-    padding: 2% 3% 0% 5%;
-    margin: 0;
     color: white;
 }
-.info p{
-    margin: 0;
+.container{
+    width: 100%;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 2% 4%
 }
 .hr{
-    width: 70%;
+    width: 15%;
+    padding: 0.5% 0;
+    margin: 1% 0 2% 0;
 }
-.arrow{
+.info{
     display: flex;
-    justify-content: flex-end;
+    flex-direction: row;
+}
+.col{
+    width: 50%;
+}
+.info-left , .info-right{
+    width: 50%;
+}
+.info-left p{
+    margin: 0;
+    padding: 0;
+    font-size: 1vw;
+}
+.footer h4{
+    font-size: 1.5vw;
+}
+
+.arrow{
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid white;
+    border-radius: 100px;
+    float: right;
 }
 .arrow a{
     text-decoration: none;
-    border: 2px solid white;
-    border-radius: 100px;
-    width: 50px;
-    height: 50px;
-    font-size: 1.5rem;
+    font-size: 1.5vw;
     color: white;
-    padding-top: 1%;
+    text-align: center;
 }
-.arrow a:hover{
+.arrow:hover{
     background-color: #1b75b1;
     border: none;
 }
 
 .fab{
     color: white;
-    font-size: 2.5rem;
+    font-size: 2vw;
     margin-right: 5%;
     margin-top: 5%;
 }
@@ -42,7 +65,60 @@
     color: #1b75b1;
 }
 .bttmP{
-    padding-top: 5%;
+    font-size: 1vw;
+    padding: 1% 0 0 3%;
 }
 
+@media(max-width: 600px){
+    .container{
+        flex-direction: column-reverse;
+    }
+    .info{
+        flex-direction: column-reverse;
+    }
+    .info p{
+        font-size: 3vw;
+    }
+    .info h4{
+        font-size: 4vw;
+        padding: 0;
+        margin: 0;
+    }
+    .info-left , .info-right{
+        margin-bottom: 5%;
+        width: 100%;
+    }
+    .col{
+        width:100%;
+    }
+    .info-right .fab{
+        font-size: 5vw;
+    } 
+    .arrow a{
+        font-size: 4vw;
+    }
+    .bttmP{
+        padding: 1% 0 0 1%;
+    }
+    .bttmP p{
+        font-size: 2vw;
+    }
 
+    @media(max-width: 400px){
+        .info p{
+            font-size: 4vw;
+        }
+        .info h4{
+            font-size: 5vw;
+        }
+        .arrow a{
+            font-size: 5vw;
+        }
+        .bttmP p{
+            font-size: 3vw;
+        }
+        .info-right .fab{
+            font-size: 8vw;
+        } 
+    }
+}

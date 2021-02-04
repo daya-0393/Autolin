@@ -19,13 +19,11 @@ export default function Cotizacion(){
             </Head>
             <Header></Header>
             <main className={cn("container", styles.container)}>
-                <div className="row">
-                    <div className={cn("col", styles["col-left"])} id="col-left">
-                        <img src="images/taller1.jpg"></img>
-                    </div>
-                    <div className={cn("col", styles["col-right"])} id="col-right">
-                        <MSForm></MSForm>
-                    </div>
+                <div className={styles["col-left"]} id="col-left">
+                    <img src="images/taller1.jpg"></img>
+                </div>
+                <div className={styles["col-right"]} id="col-right">
+                    <MSForm></MSForm>
                 </div>
             </main>
             <Footer></Footer>

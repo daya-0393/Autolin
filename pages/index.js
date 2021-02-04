@@ -21,26 +21,21 @@ export default function Index() {
         <Header></Header>
         <div className={styles["bd-img"]}>
           <div className={styles["cover-info"]}>
-            <div className={cn("row", styles["cover-heading"])}>
-              <h1>Esto es una</h1>
-              <h1>prueba</h1>
-            </div>
+            <h1>Esto es una<br/>prueba</h1>
             <Button>Ver servicios</Button>
           </div>
         </div>
-        <main className="container">
-          <div className={cn("row", styles.section)} id="benefits">
-            <Benefits></Benefits>
-          </div>
-          <div className={cn("row", styles.section)} id="services">
-              <h1 className={styles.heading}>Servicios</h1>
-              <Services></Services>
-          </div>
-          <div className={cn("row", styles.section)} id="work"> 
-            <h1 className={styles.heading}>Nuestro trabajo</h1>
-            <Gallery></Gallery>
-          </div>
-        </main>
+        <div className={cn("row", styles.section)} id="benefits">
+          <Benefits></Benefits>
+        </div>
+        <div className={cn("row", styles.section)} id="services">
+            <h1 className={styles.heading}>Servicios</h1>
+            <Services></Services>
+        </div>
+        <div className={cn("row", styles.section, styles.work)}> 
+          <h1 className={styles.heading}>Nuestro trabajo</h1>
+          <Gallery></Gallery>
+        </div>
         <Footer></Footer>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossOrigin="anonymous"></script>
       </div>
