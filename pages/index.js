@@ -22,7 +22,7 @@ export default function Index() {
         <div className={styles["bd-img"]}>
           <div className={styles["cover-info"]}>
             <h1>Esto es una<br/>prueba</h1>
-            <Button>Ver servicios</Button>
+            <a className={cn("btn btn-primary", styles.btn)} href="#services">Ver servicios</a>
           </div>
         </div>
         <div className={cn("row", styles.section)} id="benefits">
@@ -32,7 +32,7 @@ export default function Index() {
             <h1 className={styles.heading}>Servicios</h1>
             <Services></Services>
         </div>
-        <div className={cn("row", styles.section, styles.work)}> 
+        <div className={cn("row", styles.section, styles.work)} id="work"> 
           <h1 className={styles.heading}>Nuestro trabajo</h1>
           <Gallery></Gallery>
         </div>

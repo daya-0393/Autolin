@@ -6,7 +6,7 @@ import Paper from '@material-ui/core/Paper';
 import Collapse from '@material-ui/core/Collapse';
 import {content} from './content'
 import styles from './services.module.css'
-import Button from 'react-bootstrap/Button'
+import Link from 'next/link'
 
 export default function Services(){
     const [url, setUrl] = useState("e");
@@ -64,11 +64,17 @@ export default function Services(){
                 <Collapse in={checked}>
                     <Paper elevation={4} className={styles.paper}>
                         <div className={styles["color-overlay2"]}></div>
-                        <button className={styles.closeBtn} onClick={hideContent}><i class={cn("fas fa-minus", styles.fas)}></i></button>
-                        <div className={styles["cont-info"]}>
-                            <h1>{heading}</h1>
-                            <p>{text}</p>
-                            <button className={cn("btn btn-success", styles.btn)}>Cotizar servicio</button>
+                        <div className={styles["outer-cont-info"]}>
+                            <div className={styles["cont-info"]}>
+                                <h1>{heading}</h1>
+                                <p>{text}</p>
+                                <Link href="/cotizacion">
+                                    <a className={cn("btn btn-success", styles.btn)}>Cotizar servicio</a>
+                                </Link>
+                            </div>
+                        </div>
+                        <div className={styles.closeBtnCont}>
+                            <button className={styles.closeBtn} onClick={hideContent}><i class={cn("fas fa-chevron-up", styles.fas)}></i></button>
                         </div>
                     </Paper>
                 </Collapse>

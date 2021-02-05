@@ -2,7 +2,9 @@
     margin:auto;
     text-align: center;
     font-size: 3vw;
-    
+    font-family: 'Bebas Neue', cursive; 
+    color: #10466a;
+    padding-bottom: 5%;
 }
 .section{
     padding: 5% 0;
@@ -12,7 +14,7 @@
     position: fixed;
     z-index: 999;
     bottom: 3%;
-    right: 3%;
+    right: 4%;
 }
 .whatsapp img{
     width: 50px;
@@ -36,17 +38,18 @@
 }
 .cover-info h1{
     font-size: 5vw;
+    font-family: 'Bebas Neue', cursive; 
     text-shadow: 1px 1px 2px #595959;
     font-weight: bold;
     margin-bottom: 10%;
 }
-.cover-info Button{
-    width: 35%;
-    display: block;
-    margin: auto;
-    background-color: #10466A;
+.cover-info .btn{
+    background-color: #17669b;
     border: none;
     font-size: 1.5vw;
+}
+.cover-info .btn:hover{
+    background-color: #1e84c8;
 }
 
 .work{
@@ -65,7 +68,7 @@
     .cover-info h1{
         font-size: 6vw;
     }
-    .cover-info Button{
+    .cover-info btn{
         width: 40%;
         padding: 1% 0;
         font-size: 3vw;
@@ -75,5 +78,7 @@
     }
 }
 @media(max-width: 400px){
-    
+    .heading{
+        font-size:  10vw;
+    }
 }

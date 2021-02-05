@@ -18,11 +18,11 @@ export default function PersonalInfo() {
   return (
     <Form className={styles.form}>
       <div className="mb-3">
-          <label htmlFor="formGroupExampleInput" className="form-label">Nombre completo</label>
+          <label htmlFor="formGroupExampleInput" className="form-label">Nombre completo<span className="redAstherisc">*</span></label>
           <input type="text" className="form-control" id="formGroupExampleInput" name="name" onChange={onChange} required></input>
       </div>
       <div className="mb-3">
-          <label htmlFor="formGroupExampleInput2" className="form-label">Correo</label>
+          <label htmlFor="formGroupExampleInput2" className="form-label">Correo<span className="redAstherisc">*</span></label>
           <input type="text" className="form-control" id="formGroupExampleInput2" placeholder="email@ejemplo.com" name="email" onChange={onChange} required></input>
       </div>
       <label htmlFor="basic-url" className="form-label">Teléfono</label>

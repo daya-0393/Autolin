@@ -47,11 +47,11 @@ export default function MSForm(){
       }
 
     
-    /*useEffect(()=>{
+    useEffect(()=>{
         if(screen.width <= 700){
             container.current.classList.remove("shadow-lg");
         }
-    })*/
+    })
     
 
     return (

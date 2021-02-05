@@ -20,11 +20,15 @@ export default function Service(props){
         <div class={cn("col", styles.col)} type={props.type} onMouseEnter={() => setBtnShown(true)} onMouseLeave={()=> setBtnShown(false)}>
           <div class={styles.card} style={style}>
             <div className={styles["color-overlay"]}></div>
-            <h4>{`${props.title}`}</h4>
+            <div className={styles.titleCont}>
+                <h4>{`${props.title}`}</h4>
+            </div>
             {btnShown && (
-                <Button variant="primary" onClick={props.click} name={props.type}>
-                    Ver más
-                </Button>
+                <div className={styles.btnCont}>
+                    <Button variant="primary" onClick={props.click} name={props.type}>
+                        Ver más
+                    </Button>
+                </div>
             )}
           </div>
         </div>
