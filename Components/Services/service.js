@@ -17,8 +17,8 @@ export default function Service(props){
 
     return(
 
-        <div class={cn("col", styles.col)} type={props.type} onMouseEnter={() => setBtnShown(true)} onMouseLeave={()=> setBtnShown(false)}>
-          <div class={styles.card} style={style}>
+        <div className={cn("col", styles.col)} type={props.type} onMouseEnter={() => setBtnShown(true)} onMouseLeave={()=> setBtnShown(false)}>
+          <div className={styles.card} style={style}>
             <div className={styles["color-overlay"]}></div>
             <div className={styles.titleCont}>
                 <h4>{`${props.title}`}</h4>

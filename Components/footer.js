@@ -18,14 +18,14 @@ export default function Footer() {
                     <div className={styles["info-right"]}>
                         <h4>Síguenos</h4>
                         <hr className={styles.hr}></hr>
-                        <a href="https://www.facebook.com/autolin2018/" target="_blank"><i className={cn("fab", "fa-facebook-f", styles.fab)}></i></a>
-                        <a href="#"><i className={cn("fab", "fa-instagram", styles.fab)}></i></a>
+                        <a href="https://www.facebook.com/autolin2018/" target="_blank"><i aria-hidden className={cn("fab", "fa-facebook-f", styles.fab)}></i></a>
+                        <a href="#"><i aria-hidden className={cn("fab", "fa-instagram", styles.fab)}></i></a>
                     </div>
                 </div>
                 <div className={cn(styles.right, styles.col)}>
                     <div className={styles.arrow}>
                         <a href="#">
-                            <i className={cn("fas", "fa-chevron-up", styles.fas)}></i>
+                            <i aria-hidden className={cn("fas", "fa-chevron-up", styles.fas)}></i>
                         </a>
                     </div>
                 </div>

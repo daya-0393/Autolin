@@ -52,12 +52,12 @@ export default function Services(){
             <script src="https://cdnjs.cloudflare.com/ajax/libs/react/0.13.1/react-with-addons.js"></script>
             <div className={cn("row row-cols-1 row-cols-sm-2 row-cols-lg-4 g-3", styles.container)}>
                 <Service type="pintura" title="Enderezado y pintura" url="/images/services/pintura.jpg" click={defineContentType}></Service>
-                <Service type="llantas" title="Llantera" url="images/services/llanta.jpg" click={defineContentType}></Service>
-                <Service type="lubricentro" title="Lubricentro" url="images/services/lubricentro.jpg" click={defineContentType}></Service>
                 <Service type="ac" title="Aire acondicionado" url="images/services/ac.jpg" click={defineContentType}></Service>
+                <Service type="lubricentro" title="Lubricentro" url="images/services/lubricentro.jpg" click={defineContentType}></Service> 
+                <Service type="llantas" title="Llantera" url="images/services/llanta.jpg" click={defineContentType}></Service>
                 <Service type="general" title="Mecánico general" url="images/services/mantenimiento.jpg" click={defineContentType}></Service>
-                <Service type="muflas" title="Muflas" url="images/services/muflas.jpg" click={defineContentType}></Service>
                 <Service type="carWash" title="Auto lavado" url="images/services/lavado.jpg" click={defineContentType}></Service>
+                <Service type="muflas" title="Muflas" url="images/services/muflas.jpg" click={defineContentType}></Service>
                 <Service type="repuestos" title="Repuestos" url="images/services/car-parts.jpeg" click={defineContentType}></Service>
             </div>
             <div className={styles.root} ref={serviceCont}>
@@ -74,7 +74,7 @@ export default function Services(){
                             </div>
                         </div>
                         <div className={styles.closeBtnCont}>
-                            <button className={styles.closeBtn} onClick={hideContent}><i class={cn("fas fa-chevron-up", styles.fas)}></i></button>
+                            <button className={styles.closeBtn} onClick={hideContent}><i aria-hidden className={cn("fas fa-chevron-up", styles.fas)}></i></button>
                         </div>
                     </Paper>
                 </Collapse>

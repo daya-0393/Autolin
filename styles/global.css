@@ -9,6 +9,9 @@ html{
     margin: 0;
 }
 .container{
+    width: 100%;
+    max-width: none;
+    padding: 0;
     margin-top: 5%;
 }
 .redAstherisc{

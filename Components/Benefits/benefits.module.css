@@ -1,8 +1,6 @@
 @media(min-width: 700px){
     .container{
         text-align: center; 
-        width: 80%;
-        margin: auto;
     }
     .subHeading{
         padding-top: 5%;

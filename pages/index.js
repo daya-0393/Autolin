@@ -14,14 +14,15 @@ export default function Index() {
 
   return (
 
-      <div className="body">
-        <div className={styles.whatsapp}>
-          <a href="#"><img src="images/icons/whatsapp.png"></img></a>
-        </div>
-        <Header></Header>
+    <div className="body">
+      <div className={styles.whatsapp}>
+        <a href="#"><img src="images/icons/whatsapp.png"></img></a>
+      </div>
+      <Header></Header>
+      <div className={cn("container", styles.container)}>
         <div className={styles["bd-img"]}>
           <div className={styles["cover-info"]}>
-            <h1>Esto es una<br/>prueba</h1>
+            <h1>Todo lo que necesites<br />para tu vehículo</h1>
             <a className={cn("btn btn-primary", styles.btn)} href="#services">Ver servicios</a>
           </div>
         </div>
@@ -29,15 +30,18 @@ export default function Index() {
           <Benefits></Benefits>
         </div>
         <div className={cn("row", styles.section)} id="services">
-            <h1 className={styles.heading}>Servicios</h1>
-            <Services></Services>
+          <h1 className={styles.heading}>Servicios</h1>
+          <hr className={styles.hr}></hr>
+          <Services></Services>
         </div>
-        <div className={cn("row", styles.section, styles.work)} id="work"> 
+        <div className={cn("row", styles.section, styles.work)} id="work">
           <h1 className={styles.heading}>Nuestro trabajo</h1>
+          <hr className={styles.hr}></hr>
           <Gallery></Gallery>
         </div>
-        <Footer></Footer>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossOrigin="anonymous"></script>
       </div>
+      <Footer></Footer>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossOrigin="anonymous"></script>
+    </div>       
   )
 }
