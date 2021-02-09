@@ -8,15 +8,7 @@ import styles from '../Components/cotizacion.module.css'
 export default function Cotizacion(){
 
     return(
-        <div className="body">
-            <Head>
-                <meta name="viewport" content="width=device-width, initial-scale=1.0"></meta>
-                <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous"></link>
-                <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous"></link>
-                <script src="https://kit.fontawesome.com/da33aea8dd.js" crossorigin="anonymous"></script>
-                <link rel="preconnect" href="https://fonts.gstatic.com"></link>
-                <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400&display=swap" rel="stylesheet"></link> 
-            </Head>
+        <div>
             <Header></Header>
             <main className={cn("container", styles.container)}>
                 <div className={styles["col-left"]} id="col-left">

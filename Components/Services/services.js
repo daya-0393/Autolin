@@ -9,16 +9,14 @@ import styles from './services.module.css'
 import Link from 'next/link'
 
 export default function Services(props){
-    const [url, setUrl] = useState("e");
     const [heading, setHeading] = useState("e");
     const [text, setText] = useState("e");
     const [type, setType] = useState("");
     const [checked, setChecked] = React.useState(false);
-    const root = useRef();
     const services = props.rootClass;
+    const root = useRef();
 
     const setServiceContent = (type, callback) => {
-        setUrl(content[type].url);
         setHeading(content[type].heading);
         setText(content[type].paragraph);
         callback();
@@ -26,27 +24,28 @@ export default function Services(props){
 
     const showContent = () =>{
         setChecked((prev) => !prev);
+        root.current.classList.add(`${styles.space}`);
         root.current.scrollIntoView({
             behavior: "smooth", 
             block: "start"
         })
     }
+
     const hideContent = () =>{
         setChecked((prev) => !prev);
+        root.current.classList.remove(`${styles.space}`);
         services.current.scrollIntoView({
             behavior: "smooth", 
-            
         })
     }
 
     const defineContentType = (e) =>{
         const type = e.target.name;
-        setType(type);
         setServiceContent(type, showContent)
     }
 
     return(
-        <div className={cn("container-fluid", styles.outerContainer)}>
+        <div className={cn("container-fluid", styles.outerContainer)}> 
             <script src="https://cdnjs.cloudflare.com/ajax/libs/react/15.1.0/react.min.js"></script>
             <script src="https://cdnjs.cloudflare.com/ajax/libs/react/15.1.0/react-dom.min.js"></script>
             <script src="https://cdnjs.cloudflare.com/ajax/libs/react/0.13.1/react-with-addons.js"></script>

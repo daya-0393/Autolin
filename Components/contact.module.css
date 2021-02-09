@@ -2,8 +2,8 @@
     padding: 4% 0;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
-    margin-top: 5%;
+    justify-content: space-around;
+    margin-top: 5rem;
 }
 .left-col, .right-col{
     width: 40%;
@@ -19,26 +19,38 @@
     float: right;
 }
 .button img{
-    width: 40px;
-    height: 40px;
+    width: 3rem;
 }
-
+.info{
+    width: 80%;
+}
+.mapsBtns{
+    width: 20%;
+}
 .info p{
     margin-bottom: 0;
     padding: 0;
 }
-
 .map{
     padding-top: 2%;
 }
 
-@media(max-width: 700px){
+@media(max-width: 770px){
     .container{
-        margin-top: 10%;
         flex-direction: column-reverse;
+        border: 1px solid red;
+        padding: 10% 0;
     }
     .left-col, .right-col{
         width: 100%;
+    }
+    .right-col{
+        min-height: 587px; 
+    }
+}
+@media(max-width: 450px){
+    .right-col{
+        min-height: 656px;
     }
 }
 

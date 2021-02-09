@@ -6,7 +6,12 @@
     padding-bottom: 5%;
     margin: 0;
 }
-
 .req{
     color: red;
+}
+
+@media(max-width: 770px){
+    .form{
+        padding: 0 10%;
+    }
 }
