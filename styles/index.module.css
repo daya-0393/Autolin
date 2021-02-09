@@ -1,14 +1,10 @@
-.heading{
-    margin:auto;
-    text-align: center;
-    font-size: 2rem;
-    font-family: 'Bebas Neue', cursive; 
-    color: #10466a;
+.container{
+    margin: 10% 0;
 }
+
 .section{
-    padding: 5% 0;
-    margin:auto;
-    width: 80%;
+    width: 100%;
+    margin-bottom: 5%;
 }
 .whatsapp{
     position: fixed;
@@ -19,7 +15,15 @@
 .whatsapp img{
     width: 50px;
 }
-
+.heading{
+    margin:auto;
+    padding: 5% 0;
+    text-align: center;
+    font-size: 4rem;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 300;
+    color: #10466a;
+}
 .bd-img{
     position: relative;
     background-image: url("/images/cover1.jpeg");
@@ -27,60 +31,102 @@
     background-size: cover;
     background-repeat: no-repeat;
     padding: 25% 0;
+    margin-top: 5rem;
+}
+.color-layover{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 45%;
+    background-image: linear-gradient(to right, rgba(20, 88, 133,0.0), rgba(20, 88, 133,0.5));
 }
 .cover-info{
     position: absolute;
-    top: 20%;
-    right: 8%;
-    width: 35%;
+    top: 10%;
+    right: 1%;
+    width: 40%;
     text-align: center;
     color: white;
 }
-.cover-info h1{
-    font-size: 4rem;
-    font-family: 'Bebas Neue', cursive; 
-    text-shadow: 1px 1px 2px #595959;
-    font-weight: bold;
-    margin-bottom: 10%;
+.cover-info h1, .cover-info h2{
+    color: white;
+    font-family: 'Big Shoulders Display', cursive;
+    margin: 0;
+    line-height: 1.5;
+}
+.cover-info .topHeading{
+    font-size: 5rem;
+    font-weight: 300;
+    line-height: 1;
+}
+.cover-info .btmHeading{
+    font-size: 3rem;
+    font-weight: 900;
 }
 .cover-info .btn{
-    background-color: #17669b;
+    background-color:  #29a329;
     border: none;
-    font-size: 1rem;
+    font-size: 1.5rem;
+    margin-top: 10%;
+
 }
 .cover-info .btn:hover{
-    background-color: #1e84c8;
+    background-color: #248f24;
 }
-
-.work{
-    padding: 0 10%;
-}
-.hr{
-    width: 80%;
-    padding: 0.1%;
-    margin: 1% auto 8% auto; 
-    color:  #009933;
-}
-
-@media(max-width: 700px){
-
-    .work{
-        width: 100%;
+@media(max-width: 991px){
+    .bd-img{
+        margin-top: 5rem;
+    }
+    .cover-info .topHeading{
+        font-size: 4rem;
+    }
+    .cover-info .btmHeading{
+        font-size: 2rem;
     }
 }
-@media(max-width: 500px){
+
+@media(max-width: 600px){
     .bd-img{
         background-image: url("/images/cover1.1.jpeg");
         background-position: center;
         min-height: 550px;
-        margin-top: 25%;
+        margin-top: 5rem;
+    }
+    .color-layover{
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        background-image: linear-gradient(rgba(20, 88, 133,0.0), rgba(20, 88, 133,0.5));
     }
     .cover-info{
         width: 100%;
-        top: 55%;
-        right: 0;
+        bottom: 0%;
+        top: auto;
     }
-    .cover-info h1{
-        font-size: 2.5rem;
+    .cover-info h1, .cover-info h2{
+        width: 90%;
+        margin:auto;
+        line-height: 1.5;
     }
+    .cover-info .topHeading{
+        font-size: 3rem;
+    }
+    .cover-info .btmHeading{
+        font-size: 2rem;
+    }
+    .cover-info .btn{
+        margin-top: 5%;
+        margin-bottom: 5%;
+        background-color:  #29a329;
+    }
+    .heading{
+        font-size: 3rem;
+    }
+    .section{
+        margin-bottom: 15%;
+    }
+
 }

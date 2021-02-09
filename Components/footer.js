@@ -23,11 +23,9 @@ export default function Footer() {
                     </div>
                 </div>
                 <div className={cn(styles.right, styles.col)}>
-                    <div className={styles.arrow}>
-                        <a href="#">
-                            <i aria-hidden className={cn("fas", "fa-chevron-up", styles.fas)}></i>
-                        </a>
-                    </div>
+                    <a href="#" className={styles.arrow}>
+                        <i aria-hidden className={cn("fas", "fa-chevron-up", styles.fas)}></i>
+                    </a>
                 </div>
             </div>
             <div className={cn("row", styles.bttmP)}>

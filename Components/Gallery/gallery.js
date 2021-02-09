@@ -1,6 +1,6 @@
 
 import ImageGallery from 'react-image-gallery';
-
+import styles from './gallery.module.css'
 
 
 export default function Gallery(){
@@ -14,8 +14,9 @@ export default function Gallery(){
     }
     
     return(
-
-        <ImageGallery items={images} />
+        <div className={styles.container}>
+            <ImageGallery items={images}/>
+        </div>
     )
 }
 
