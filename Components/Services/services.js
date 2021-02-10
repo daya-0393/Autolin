@@ -50,14 +50,14 @@ export default function Services(props){
             <script src="https://cdnjs.cloudflare.com/ajax/libs/react/15.1.0/react-dom.min.js"></script>
             <script src="https://cdnjs.cloudflare.com/ajax/libs/react/0.13.1/react-with-addons.js"></script>
             <div className={cn("row row-cols-1 row-cols-sm-2 row-cols-lg-4 g-3", styles.container)}>
-                <Service type="pintura" title="Enderezado y pintura" url="/images/services/pintura.jpg" click={defineContentType}></Service>
-                <Service type="ac" title="Aire acondicionado" url="images/services/ac.jpg" click={defineContentType}></Service>
-                <Service type="lubricentro" title="Lubricentro" url="images/services/lubricentro.jpg" click={defineContentType}></Service>
-                <Service type="llantas" title="Llantera" url="images/services/llanta.jpg" click={defineContentType}></Service>
-                <Service type="general" title="Mecánico general" url="images/services/mantenimiento.jpg" click={defineContentType}></Service>
-                <Service type="carWash" title="Auto lavado" url="images/services/lavado.jpg" click={defineContentType}></Service>
-                <Service type="muflas" title="Muflas" url="images/services/muflas.jpg" click={defineContentType}></Service>
-                <Service type="repuestos" title="Repuestos" url="images/services/car-parts.jpeg" click={defineContentType}></Service>
+                <Service type="pintura" title="Enderezado y pintura" url="/images/services/pintura.webp" click={defineContentType}></Service>
+                <Service type="ac" title="Aire acondicionado" url="images/services/ac.webp" click={defineContentType}></Service>
+                <Service type="lubricentro" title="Lubricentro" url="images/services/lubricentro.webp" click={defineContentType}></Service>
+                <Service type="llantas" title="Llantera" url="images/services/llanta.webp" click={defineContentType}></Service>
+                <Service type="general" title="Mecánico general" url="images/services/mantenimiento.webp" click={defineContentType}></Service>
+                <Service type="carWash" title="Auto lavado" url="images/services/lavado.webp" click={defineContentType}></Service>
+                <Service type="muflas" title="Muflas" url="images/services/muflas.webp" click={defineContentType}></Service>
+                <Service type="repuestos" title="Repuestos" url="images/services/car-parts.webp" click={defineContentType}></Service>
             </div>
             <div className={styles.root} ref={root}>
                 <Collapse in={checked}>

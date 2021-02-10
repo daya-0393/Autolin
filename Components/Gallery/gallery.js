@@ -6,10 +6,10 @@ import styles from './gallery.module.css'
 export default function Gallery(){
     const images = [];
 
-    for(var i= 1; i<=13; i++){
+    for(var i= 1; i<=12; i++){
       images.push(
-        {original:`/images/gallery/carro${i}.jpeg`,
-         thumbnail:`/images/gallery/carro${i}.jpeg`,
+        {original:`/images/gallery/carro${i}.webp`,
+         thumbnail:`/images/gallery/carro${i}.webp`,
         });
     }
     

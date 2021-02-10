@@ -70,7 +70,7 @@
 .root .paper{
     color: white;
     position: relative;
-    background-image: url("/images/img2.jpg");
+    background-image: url("/images/img2.webp");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -153,7 +153,7 @@
         padding: 25% 0;
     }
     .root .paper{
-        background-image: url("/images/img2.1.jpg");
+        background-image: url("/images/img2.1.webp");
         padding: 40% 0;
         background-size: 50rem;
     }

@@ -3,7 +3,8 @@ export const content =
     "pintura": {
         "url": "images/painting.jpg", 
         "heading": "Pintura", 
-        "paragraph": "Nuestros servicios en Enderezado y pintura se centran en devolver a un vehículo su línea y acabado de fabrica con la mas alta calidad recuperando su apariencia original."
+        "paragraph": "Nuestros servicios en Enderezado y pintura se centran en devolver a un vehículo su línea y acabado de fabrica con la mas alta calidad recuperando su apariencia original.",
+
     },
     "llantas": {
         "url": "images/tire.jpg", 
