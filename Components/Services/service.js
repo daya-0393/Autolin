@@ -28,7 +28,10 @@ export default function Service(props){
             </div>
             {btnShown && (
                 <div className={styles.btnCont}>
-                    <Button variant="primary" onClick={()=> router.push({pathname:'/servicio', query: {id:props.type}})} name={props.type}>
+                    <Button variant="primary" onClick={()=> {
+                        sessionStorage.setItem('type', props.type);
+                        router.push({pathname:'/servicio'})
+                    }}>
                         Ver más
                     </Button>
                 </div>

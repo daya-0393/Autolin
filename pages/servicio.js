@@ -2,38 +2,61 @@ import styles from '../styles/services.module.css'
 import Header from '../Components/header'
 import Footer from '../Components/footer'
 import cn from 'classnames'
-import { useState, useEffect } from 'react'
+import { useState, useEffect, useRef } from 'react'
 import {useRouter} from 'next/router'
 import {content} from '../lib/serviceContent'
 
 
 export default function Servicios(){
-    const router = useRouter();
-    const type = router.query;
-    const list = content[type.id].list;
+    const [type, setType] = useState("");
     const [htmlList, setHtmlList] = useState([]);
+    const [heading, setHeading] = useState("");
+    const [text, setText] = useState("");
+    const listItem = useRef();
 
-    const getListItems = () =>{
-        setHtmlList((content[type.id].list).map((item)=>{
-            return <li>{item}</li>
-        }))
+    useEffect(()=>{
+        console.log(sessionStorage.getItem('type'))
+        setType(sessionStorage.getItem('type'));
+        setHeading(sessionStorage.getItem('heading'));
+        setText(sessionStorage.getItem('text'));
+    })
+
+    const expandShadow= (e) =>{
+        console.log(e.target);
     }
 
+    const hideShadow= (e) =>{
+        console.log(e.target.key);
+    }
+
+    useEffect(()=>{
+        if(sessionStorage.list != null || sessionStorage != ''){
+            setHtmlList(sessionStorage.list.split(',').map((item, index)=>{
+                return(
+                    <div className={cn("shadow", styles.item)} key={index} ref={listItem} onMouseEnter={expandShadow} onMouseLeave={hideShadow}>
+                        <p>{item}</p>
+                        <i className={cn("fas fa-angle-double-down", styles.fas)}></i>
+                    </div> 
+                ) 
+                
+            }));
+        }
+    },[])
+
+    const setServiceContent = ()=>{
+        sessionStorage.setItem('heading', content[type].heading);
+        sessionStorage.setItem('text', content[type].text);
+        sessionStorage.setItem('list', content[type].list);
+    }
+    
     return(
-        <div onLoad={getListItems}>
+        <div onLoad={setServiceContent} className="wrapper">
             <Header></Header>
             <main className={cn("container", styles.container)}>
-                <div className={styles.row}>
-                    <div className={styles.img}>
-                        <img src={content[type.id].url}></img>
-                    </div>
-                    <div className={styles.text}>
-                        <h1>{content[type.id].heading}</h1>
-                        <p>{content[type.id].text}</p>
-                        <ul>
-                            {htmlList}
-                        </ul>
-                    </div>
+                <h1 className={cn("heading", styles.heading)}>{heading}</h1>
+                <p className={styles.text}>{text}</p>
+                <div className={styles.list}>
+                    {htmlList}
                 </div>
             </main>
             <Footer></Footer>

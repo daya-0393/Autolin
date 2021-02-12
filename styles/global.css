@@ -1,19 +1,32 @@
 @import "../node_modules/react-image-gallery/styles/css/image-gallery.css";
 
-html{
+html, body{
     font-size: 100%;
     box-sizing: border-box;
+    height: 100%;
+}
+body{
+    display: flex;
+    flex-direction: column;
 }
 .row{
     padding: 0;
     margin: 0;
 }
-.container{
-    width: 100%;
-    max-width: none;
-    padding: 0;
-    margin-top: 5%;
-}
 .redAstherisc{
     color: red;
+}
+.wrapper{
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.heading{
+    margin:auto;
+    text-align: center;
+    font-size: 4rem;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 300;
+    color: #10466a;
 }

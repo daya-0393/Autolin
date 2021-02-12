@@ -12,11 +12,7 @@ import cn from 'classnames'
 export default function Index() {
   const services = useRef();
   return (
-
-    <div className={styles.outerContainer}>
-      <div className={styles.whatsapp}>
-        <a href="#"><img src="images/icons/whatsapp.png"></img></a>
-      </div>
+    <div className="wrapper">
       <Header></Header>
       <main>
         <div className={styles["bd-img"]}>
@@ -32,18 +28,19 @@ export default function Index() {
             <Benefits></Benefits>
           </div>
           <div className={cn("row", styles.section, styles.services)} id="services" ref={services}>
-            <h1 className={styles.heading}>Servicios</h1>
+            <h1 className={cn("heading", styles.heading)}>Servicios</h1>
             <Services rootClass={services}></Services>
           </div>
           <div className={cn("row", styles.section, styles.work)} id="work">
-            <h1 className={styles.heading}>Nuestro trabajo</h1>
+            <h1 className={cn("heading", styles.heading)}>Nuestro trabajo</h1>
             <Gallery></Gallery>
           </div>
         </div>
+        <div className={styles.whatsapp}>
+          <a href="#"><img src="images/icons/whatsapp.png"></img></a>
+        </div>
       </main>
       <Footer></Footer>
-      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossOrigin="anonymous"></script>
     </div>
-      
   )
 }
