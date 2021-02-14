@@ -1,6 +1,12 @@
 .container{
     padding: 3% 0;
-    margin: 5rem auto;
+    margin: 5rem 0;
+    display: flex;
+    flex-direction: row;
+    border: 1px solid red;
+}
+.col{
+    width: 50%;
 }
 .text{
     width: 80%;
@@ -10,17 +16,20 @@
 
 .list{
     display: flex;
-    flex-direction: row;
-    justify-content: space-around;
+    flex-direction: column;
+    width: 70%;
 }
 .item{
     min-width: 15rem;
-    min-height: 100px;
+    min-height: 80px;
     position: relative;
     text-align: center;
-    margin: 0 1%;
+    margin: 3% 0;
     padding: 1% 0;
     border-radius: 5px;
+}
+.hiden{
+    display: none;
 }
 .item:hover{
     background-color: #53c653;
@@ -37,11 +46,17 @@
     font-size: 1rem;
     color: #10466a;
 }
-.item .fas{
+.btn{
     width: 100%;
     position: absolute;
     bottom: 5%;
     left: 0;
+}
+.btn .fas{
     font-size: 1.5rem;
     color: #339933;
+}
+
+.btn .fas{
+    cursor: pointer;
 }
