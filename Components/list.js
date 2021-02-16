@@ -8,7 +8,7 @@ export default function List(props){
             return(
                 <div className={cn("shadow", styles.item)} key={index}>
                     <p>{item}</p>
-                    <div className={styles.btn} onClick={props.clicked}>
+                    <div className={styles.listItem} onClick={props.clicked}>
                         <i className={cn("fas fa-angle-double-down", styles.fas)}></i>
                     </div> 
                     <div className={cn(styles.description, styles.hiden)}>
@@ -23,8 +23,8 @@ export default function List(props){
     })
 
     return(
-        <ul className={styles.list}>
+        <div className={styles.list}>
             {htmlList}
-        </ul>
+        </div>
     )
 }

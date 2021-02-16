@@ -4,7 +4,7 @@ import cn from 'classnames'
 
 export default function Benefit(props){
     return(
-        <div className={cn("col", styles.item)}>
+        <div className={cn("shadow", styles.item)}>
             <img className={styles.benefitsImage} src={props.url}></img>
             {props.children}
         </div>

@@ -22,20 +22,17 @@ export default function Service(props){
 
         <div className={cn("col", styles.col)} type={type} onMouseEnter={() => setBtnShown(true)} onMouseLeave={()=> setBtnShown(false)}>
           <div className={styles.card} style={style}>
-            <div className={styles["color-overlay"]}></div>
+          </div>
+          <div>
             <div className={styles.titleCont}>
                 <h4>{`${props.title}`}</h4>
             </div>
-            {btnShown && (
-                <div className={styles.btnCont}>
-                    <Button variant="primary" onClick={()=> {
+            <Button variant="primary" onClick={()=> {
                         sessionStorage.setItem('type', props.type);
                         router.push({pathname:'/servicio'})
                     }}>
                         Ver más
-                    </Button>
-                </div>
-            )}
+            </Button>
           </div>
         </div>
     )

@@ -1,8 +1,9 @@
 
 .container{
+    display: flex;
     text-align: center; 
     width: 80%;
-    margin: auto;
+    margin: 3% auto;
 }
 .subHeading{
     font-family: 'Oswald', sans-serif;
@@ -11,12 +12,16 @@
     padding-bottom: 1%;
     font-size: 2rem;
 }
+.item{
+    margin: 1%; 
+    width: 30%;
+    padding: 2%;
+}
 .item img{
     width: 20%;
 }
 
 .item p{
-    width: 80%;
     margin:auto;
     font-size: 1rem;
 }

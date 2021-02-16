@@ -1,32 +1,28 @@
 .container{
+    width: 70%;
     padding: 3% 0;
-    margin: 5rem 0;
+    margin: 5rem auto;
     display: flex;
-    flex-direction: row;
-    border: 1px solid red;
+    flex-direction: column;
 }
-.col{
-    width: 50%;
+.text, .list, .btn{
+    width: 70%;
+    margin:auto;
 }
 .text{
-    width: 80%;
-    margin:auto;
     padding: 2% 0;
 }
 
 .list{
     display: flex;
     flex-direction: column;
-    width: 70%;
 }
 .item{
-    min-width: 15rem;
     min-height: 80px;
     position: relative;
     text-align: center;
-    margin: 3% 0;
-    padding: 1% 0;
     border-radius: 5px;
+    margin: 1% 0;
 }
 .hiden{
     display: none;
@@ -46,17 +42,24 @@
     font-size: 1rem;
     color: #10466a;
 }
-.btn{
+.listItem{
     width: 100%;
     position: absolute;
     bottom: 5%;
     left: 0;
 }
-.btn .fas{
+.listItem .fas{
     font-size: 1.5rem;
     color: #339933;
 }
 
-.btn .fas{
+.listItem .fas{
     cursor: pointer;
+}
+
+.btn{
+    background-color: #339933;
+    border: #339933;
+    margin: 5% auto;
+    padding: 1% 0;
 }

@@ -30,3 +30,8 @@ body{
     font-weight: 300;
     color: #10466a;
 }
+.container{
+    min-width: none;
+    max-width: none;
+    padding: 0;
+}

@@ -3,8 +3,13 @@
     margin: 0;
 }
 .container{
-    width: 80%;
+    width: 90%;
     margin:auto;
+}
+.col{
+    width: 20%;
+    background-color: white;
+    margin: 1%;
 }
 .card{
     position: relative;
@@ -14,26 +19,9 @@
     padding: 30% 0;
     border: 0;
 }
-.color-overlay{
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: #404040;
-    opacity: 0.5;
-}
+
 .card:hover .color-overlay{
     opacity: 0.8;
-}
-.color-overlay2{
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: #10466A;
-    opacity: 0.6;
 }
 .card .titleCont{
     position: absolute;
@@ -62,78 +50,21 @@
     margin:auto;
 }
 
-/********DIV CONTENIDO DE SECCION********/
+.carousel{
 
-.space{
-    min-height: 550px;
+    min-height: 500px;
 }
-.root .paper{
-    position: relative;
-    min-height: 450px;
-    margin: 10% auto;
-    width: 90%;
-}
-.paper h1{
-    text-align: center;
-    font-size: 3rem;
-    padding-top: 2%;
-}
-.cont-info{
-    width: 80%;
-    margin: auto;
-    padding: 2% 0;
-    display: flex;
-    flex-direction: column;
-}
-.btnBox{
-    display: flex;
-    justify-content: center;
-}
-.paper .btn{
-    background-color: #2eb82e;
-    border:#2eb82e;
-    font-size: 1rem;
-}
-.paper .btn:hover{
-    background-color: #33cc33;
-}
-.closeBtnCont{
+
+.controls{
     position: absolute;
-    width: 100%;
-    bottom: 2%;
-    text-align: center;
-}
-.closeBtnCont .closeBtn{
-    width: 10%;
-    background-color: transparent;
-    border: 0;
-}
-.closeBtn .fas{
-    color: black;
-    font-size: 2rem;
-    transition-property: padding;
-    transition-duration: 0.5s ;
-}
-.closeBtn:hover .fas{
-    color: white;
-    bottom: 3%;
-    padding-bottom: 10%;
-}
-.list{
-    list-style: none;
-    padding-left: 15%;
-    border: 1px solid red;
-    text-align: start;
-}
-.list li{
-    color: white;
-    display: inline-block;
-    border: 1px solid white;
-    background-color: #10466A;
-    padding: 1%;
-}
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 50%;
+    padding: 2% 0;
+    margin: auto;
 
-/**************************************************/
+}
 
 @media(max-width: 991px){
 
