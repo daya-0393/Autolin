@@ -1,9 +1,9 @@
-import styles from '../styles/services.module.css'
+import styles from '../styles/service.module.css'
 import Header from '../Components/header'
 import Footer from '../Components/footer'
 import cn from 'classnames'
 import { useState, useEffect, useRef } from 'react'
-import { content } from '../lib/serviceContent'
+import {content} from '../lib/serviceContent'
 import List from '../Components/list'
 
 
@@ -56,6 +56,9 @@ export default function Servicios() {
             <Header></Header>
             <main className={styles.container}>
                 <h1 className={cn("heading", styles.heading)}>{heading}</h1>
+                <div className={styles.content}>
+                    
+                </div>
                 <p className={styles.text}>{text}</p>
                 <List list={list} itemDesc={itemDesc}></List>
                 <button className={cn("btn btn-success", styles.btn)}>Cotizar servicio</button>

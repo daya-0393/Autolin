@@ -1,5 +1,5 @@
 import cn from 'classnames'
-import styles from '../styles/services.module.css'
+import styles from '../styles/service.module.css'
 
 export default function List(props){
 

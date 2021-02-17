@@ -35,3 +35,9 @@ body{
     max-width: none;
     padding: 0;
 }
+
+.rec-carousel button{
+    color: white;
+    border: 0;
+    background-color: transparent;
+}

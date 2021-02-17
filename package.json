@@ -12,11 +12,11 @@
     "bootstrap": "^4.5.3",
     "classnames": "^2.2.6",
     "emailjs-com": "^2.6.4",
-    "jquery": "^3.5.1",
     "next": "^10.0.0",
     "react": "16.13.1",
     "react-bootstrap": "^1.4.3",
     "react-dom": "16.13.1",
+    "react-elastic-carousel": "^0.11.1",
     "react-image-gallery": "^1.0.8",
     "react-multi-form": "^1.0.5"
   }

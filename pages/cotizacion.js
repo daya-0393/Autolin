@@ -12,7 +12,7 @@ export default function Cotizacion(){
             <Header></Header>
             <main className={cn("container", styles.container)}>
                 <div className={styles["col-left"]} id="col-left">
-                    <img src="images/taller1.jpg"></img>
+                    <img src="images/taller1.webp"></img>
                 </div>
                 <div className={styles["col-right"]} id="col-right">
                     <MSForm></MSForm>
