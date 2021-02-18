@@ -26,13 +26,12 @@ export default function Index() {
         <div className={cn("container", styles.container)}>
           <div className={cn("row", styles.section, styles.benefits)} id="benefits">
             <h1 className={cn("heading", styles.heading)}>Beneficios</h1>
-            <p className={styles.text}>La mejor manera de consentir tu auto es visitando nuestro centro de servicio, pues es aquí donde puedes realizarle diversos servicios para que vuelva a ser como cuando recién lo compraste o incluso mejor.</p>
             <Benefits></Benefits>
           </div>
           <div className={cn("row", styles.section, styles.services)} id="services" ref={services}>
+            <div className={styles["top-divider"]}></div>
             <h1 className={cn("heading", styles.heading)}>Servicios</h1>
             <Services rootClass={services}></Services>
-            
           </div>
           <div className={cn("row", styles.section, styles.work)} id="work">
             <h1 className={cn("heading", styles.heading)}>Nuestro trabajo</h1>

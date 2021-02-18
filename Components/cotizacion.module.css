@@ -4,6 +4,8 @@
     flex-direction: row;
     justify-content: space-around;
     padding: 4% 0;
+    margin-top: 5rem;
+    background-color: white;
 }
 .col-left, .col-right{
     width: 40%;

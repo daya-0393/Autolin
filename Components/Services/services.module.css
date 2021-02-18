@@ -9,7 +9,7 @@
     background-color: white;
     margin: 5%;
     min-height: 550px;
-    box-shadow: 1px 1px 10px 5px #034c7d;
+    box-shadow: 3px 2px 15px #034c7d;   
     border-radius: 10px;
     text-align: center;
 }
@@ -56,9 +56,6 @@
     background-color: #046aaf;
     border: #046aaf;
 }
-
-
-
 .card .btnCont{
     position: absolute;
     display: block;
@@ -75,6 +72,9 @@
 
 @media(max-width: 450px){
     .container{
+        width: 100%;
+    }
+    .col{
         width: 100%;
     }
 }

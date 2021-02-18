@@ -12,11 +12,9 @@ export default function Servicios() {
     const [heading, setHeading] = useState("");
     const [text, setText] = useState("");
     const [list, setList] = useState([""]);
-    const [itemDesc, setItemDesc] = useState([]);
+    const [itemDescription, setItemDesc] = useState([]);
     const [url, setUrl] = useState("");
-    const [htmlList, setHtmlList] = useState([]);
-    const listItem = useRef();
-
+    const style = {backgroundImage: 'url(' + url + ')'}
 
     useEffect(() => {
         setType(sessionStorage.getItem('type'));
@@ -44,24 +42,22 @@ export default function Servicios() {
         setHeading(sessionStorage.getItem('heading'));
         setText(sessionStorage.getItem('text'));
         setUrl(sessionStorage.getItem('url'));
-
-    }
-
-    const handleItemClick = ()=>{
-
     }
 
     return (
         <div className="wrapper">
             <Header></Header>
             <main className={styles.container}>
-                <h1 className={cn("heading", styles.heading)}>{heading}</h1>
-                <div className={styles.content}>
-                    
+                <div  style={style}className={cn("col", styles.img)}>
                 </div>
-                <p className={styles.text}>{text}</p>
-                <List list={list} itemDesc={itemDesc}></List>
-                <button className={cn("btn btn-success", styles.btn)}>Cotizar servicio</button>
+                <div className="col">
+                    <div className={styles.content}>
+                        <h1 className={cn("heading", styles.heading)}>{heading}</h1>
+                        <p>{text}</p>
+                        <List list={list} itemDesc={itemDescription}></List>
+                        <button className={cn("btn btn-success", styles.btn)}>Cotizar servicio</button>
+                    </div>
+                </div>
             </main>
             <Footer></Footer>
         </div>
