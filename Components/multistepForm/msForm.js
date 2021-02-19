@@ -5,15 +5,11 @@ import Quotation from './quotation'
 import ServiceCheck from './serviceCheck'
 import styles from './form.module.css'
 import cn from 'classnames'
-import {useRef, useState, useEffect} from 'react'
+import {useRef, useState, useEffect, forwardRef} from 'react'
 import emailjs from 'emailjs-com'
 
-export default function MSForm(){
+export default function MSForm(props){
     const [active, setActive] = React.useState(1);
-    const [showAlert, setShowAlert] = useState(false);
-    const [alert, setAlert] = useState("");
-    const [message, setMessage] = useState("");
-    const [inputValues, setInputValues] = useState({});
     const container = useRef();
 
     function setFormData(){
@@ -34,17 +30,18 @@ export default function MSForm(){
         const dataObject = setFormData();
         emailjs.send('service_w7xcwkk', 'template_owp6ne8', dataObject, 'user_opD6c7JPY3hWfFA8RPNFD')
           .then((result) => {
-                setAlert("alert-success");
-                setMessage("El mensaje ha sido enviado exitosamente");
-                setShowAlert(true);
+                props.setAlert("alert-success");
+                props.setMessage("El mensaje ha sido enviado exitosamente");
+                props.setAlertShown(true);
                 console.log(result.text);
           }, (error) => {
-                setAlert("alert-danger");
-                setMessage(error.text);
-                setShowAlert(true);
+                props.setAlert("alert-danger");
+                props.setMessage(error.text);
+                props.setAlertShown(true);
                 console.log(error.text);
           });
-      }
+        form.current.reset()
+    }
 
     
     useEffect(()=>{
@@ -56,12 +53,6 @@ export default function MSForm(){
 
     return (
         <div className={cn("container", "shadow-lg" ,styles.container)} ref={container}>
-            {showAlert &&
-                <div className={cn(`alert ${alert} alert-dismissible fade show`, styles.alert)} role="alert">
-                    {message}
-                    <button type="button" className="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
-                </div>
-            }
             <h1 className={styles.subHeading} >Cotizar servicio</h1>
             <MultiStepForm activeStep={active}>
                 <Step label='Servicio'>

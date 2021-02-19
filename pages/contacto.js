@@ -56,7 +56,7 @@ export default function Contact(){
                     <div className="row">
                         <div className={styles.info}>
                             <p><b>Teléfono: </b>+506123456</p>
-                            <p><b>Correo: </b>autolin@hotmail.com</p>
+                            <p><b>Correo: </b>autolinautomotriz@gmail.com</p>
                             <p><b>Dirección: </b>Pozos de Santa Ana, San José</p>
                             <p><b>Horario: </b>Lunes - Domingo, 7:00am - 7:00pm</p>
                         </div>

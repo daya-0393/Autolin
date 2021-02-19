@@ -7,22 +7,45 @@ export default function List(props){
     const [itemSelected, setItemSelected] = useState();
     const [htmlCollection, setHtmlCollection] = useState();
     const [selected, setSelected] = useState();
-    const [show, setShow] = useState(false);
+    const [itemShown, setItemShown] = useState(false);
     const list = useRef();
 
+    useEffect(()=>{
+        console.log(itemShown);
+        console.log(selected);
+        if(itemShown){
+            selected.children[1].classList.remove('hidden');
+        }else if(itemShown == false && selected !== undefined){
+            selected.children[1].classList.add('hidden');
+            setSelected();
+        }
+    }, [itemShown])
+    
+
     const onItemClicked = (element) =>{
-        const x = list.current.children;
-        Array.from(x).forEach((item, index) =>{
-            item.children[1].classList.add('hidden');
-        });
-        setSelected(element.children[1]);
+        console.log("entro");
+        if(itemShown){
+            if(element === selected){
+                setItemShown(false);
+            }else{
+                setItemShown(false);
+            }
+        }else if(itemShown == false){
+            setItemShown(true);
+            setSelected(element);
+        }
     }
 
-    useEffect(()=>{
-        if(selected !== undefined){
-            selected.classList.remove('hidden');
-        }
-    })
+    /*const resetToDefaultValues =()=>{
+        setSelected(undefined);
+    }
+
+    const hideDescription = ()=>{
+        const x = list.current.children;
+        Array.from(x).forEach((item) =>{
+            item.children[1].classList.add('hidden');
+        });
+    }*/
 
 
     const htmlList = props.list.map((item, index)=>{

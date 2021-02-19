@@ -12,7 +12,7 @@ export default function Footer() {
                         <h4>Contáctenos</h4>
                         <hr className={styles.hr}></hr>
                         <p><b>Teléfono: </b>+506 1234567</p>
-                        <p><b>Correo: </b>autolin@hotmail.com</p>
+                        <p><b>Correo: </b>autolinautomotriz@gmail.com</p>
                         <p><b>Dirección: </b>Pozos de Santa Ana, San José</p>
                     </div>
                     <div className={styles["info-right"]}>
