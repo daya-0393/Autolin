@@ -16,10 +16,9 @@ export default function Footer() {
                         <p><b>Dirección: </b>Pozos de Santa Ana, San José</p>
                     </div>
                     <div className={styles["info-right"]}>
-                        <h4>Síguenos</h4>
+                        <h4>Síguenos en</h4>
                         <hr className={styles.hr}></hr>
                         <a href="https://www.facebook.com/autolin2018/" target="_blank"><i aria-hidden className={cn("fab", "fa-facebook-f", styles.fab)}></i></a>
-                        <a href="#"><i aria-hidden className={cn("fab", "fa-instagram", styles.fab)}></i></a>
                     </div>
                 </div>
                 <div className={cn(styles.right, styles.col)}>

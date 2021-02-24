@@ -10,6 +10,10 @@ body{
     display: flex;
     flex-direction: column;
 }
+h1, h2, h3, h4, h5{
+    font-family: 'Oswald', sans-serif;
+    font-weight: 300;
+}
 .row{
     padding: 0;
     margin: 0;
@@ -24,10 +28,9 @@ body{
 }
 
 .heading{
-    margin:auto;
+    margin: 2% auto;
     text-align: center;
     font-size: 4rem;
-    font-family: 'Oswald', sans-serif;
     font-weight: 300;
     color: #10466a;
 }
@@ -41,8 +44,21 @@ body{
     color: white;
     border: 0;
     background-color: transparent;
+    box-shadow: none;
 }
-
+.rec-pagination .guuruq{
+    box-shadow: none;
+    border: 3px solid whitesmoke;
+    height: 15px;
+    width: 15px;
+}
+.rec-pagination .cJeRRR{
+    box-shadow: none;
+    background-color: transparent;
+    border: 3px solid #10466a;
+    height: 15px;
+    width: 15px;
+}
 .hidden{
     display: none;
 }

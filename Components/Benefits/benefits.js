@@ -8,27 +8,27 @@ export default function Benefits(){
         <div className={cn("row", styles.container)}>
             <Benefit url="/images/icons/hands.webp">
                 <h2 className={styles.subHeading}>Confianza</h2>
-                <p>Nuestra variedad de servicios nos permite trabajar de una manera más eficiente y así nos permite reducir considerablemente los tiempos de entrega de los vehículos de nuestros clientes.</p>
+                <p>Somos un taller con amplia trayectoria y solidez. Por eso nuestros clientes confían en nuestro trabajo.</p>
             </Benefit>
             <Benefit url="/images/icons/list.webp">
                 <h2 className={styles.subHeading}>Variedad de servicios</h2>
-                <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras mattis consectetur purus.</p>
+                <p>Nuestra variedad de servicios nos permite trabajar de una manera más eficiente y así nos permite reducir considerablemente los tiempos de entrega de los vehículos de nuestros clientes.</p>
             </Benefit>
             <Benefit url="/images/icons/talking.webp">
                 <h2 className={styles.subHeading}>Atención personalizada</h2>
-                <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod.</p>
+                <p>Nos encargamos de brindar un servcio especializado, que se ajuste a las necesidades de cada uno de nuestros clientes</p>
             </Benefit>
             <Benefit url="/images/icons/shield.webp">
                 <h2 className={styles.subHeading}>Garantía</h2>
-                <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod.</p>
+                <p>Todos nuestros trabajos cuentan con un respaldo, asegurandonos de que cada uno de nuestros clientes quede satisfecho con nuestro trabajo.</p>
             </Benefit>
             <Benefit url="/images/icons/innovation.webp">
                 <h2 className={styles.subHeading}>Innovación</h2>
-                <p>Constantemente estamos innovando para cumplir con las expectativas de nuestros.</p>
+                <p>Constantemente estamos innovando para ofrecer un servicio con lo ultimo en el mercado.</p>
             </Benefit>
             <Benefit url="/images/icons/star.webp">
                 <h2 className={styles.subHeading}>Calidad</h2>
-                <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod.</p>
+                <p>Ofrecemos un servicio de alta calidad, procurando que nuestro trabajo sobre pase las espectativas de nuestros trabajos.</p>
             </Benefit>
             
         </div>

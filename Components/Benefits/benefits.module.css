@@ -4,6 +4,7 @@
     text-align: center; 
     width: 80%;
     margin: 3% auto;
+    justify-content: center;
 }
 .subHeading{
     font-family: 'Oswald', sans-serif;

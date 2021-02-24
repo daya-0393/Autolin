@@ -39,7 +39,7 @@ export default function Index() {
           </div>
         </div>
         <div className={styles.whatsapp}>
-          <a href="#"><img src="images/icons/whatsapp.png"></img></a>
+          <a href="https://wa.me/+50688434445"><img src="images/icons/whatsapp.png"></img></a>
         </div>
       </main>
       <Footer></Footer>
