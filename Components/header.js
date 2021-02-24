@@ -1,7 +1,7 @@
 import styles from './header.module.css'
 import cn from 'classnames'
 import Link from 'next/link'
-import { useState, useRef } from 'react'
+import {useRef } from 'react'
 
 export default function Header(){
     const navbarCollapse = useRef();

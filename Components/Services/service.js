@@ -2,7 +2,7 @@ import styles from './services.module.css'
 import cn from 'classnames'
 import Link from 'next/link'
 import Button from 'react-bootstrap/Button'
-import { useEffect, useRef } from 'react'
+import { useEffect} from 'react'
 import {useState} from 'react'
 import {useRouter} from 'next/router'
 

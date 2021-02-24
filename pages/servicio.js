@@ -2,7 +2,7 @@ import styles from '../styles/service.module.css'
 import Header from '../Components/header'
 import Footer from '../Components/footer'
 import cn from 'classnames'
-import { useState, useEffect, useRef } from 'react'
+import { useState, useEffect} from 'react'
 import {content} from '../lib/serviceContent'
 import List from '../Components/list'
 

@@ -3,9 +3,6 @@ import styles from '../styles/service.module.css'
 import {useState, useRef, useEffect} from 'react'
 
 export default function List(props){
-    const [description, setDescription] = useState(false);
-    const [itemSelected, setItemSelected] = useState();
-    const [htmlCollection, setHtmlCollection] = useState();
     const [selected, setSelected] = useState();
     const [itemShown, setItemShown] = useState(false);
     const list = useRef();
@@ -35,18 +32,6 @@ export default function List(props){
             setSelected(element);
         }
     }
-
-    /*const resetToDefaultValues =()=>{
-        setSelected(undefined);
-    }
-
-    const hideDescription = ()=>{
-        const x = list.current.children;
-        Array.from(x).forEach((item) =>{
-            item.children[1].classList.add('hidden');
-        });
-    }*/
-
 
     const htmlList = props.list.map((item, index)=>{
 

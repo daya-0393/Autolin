@@ -1,11 +1,10 @@
-import Head from 'next/head'
 import { MultiStepForm, Step } from 'react-multi-form';
 import PersonalInfo from './personalInfo'
 import Quotation from './quotation'
 import ServiceCheck from './serviceCheck'
 import styles from './form.module.css'
 import cn from 'classnames'
-import {useRef, useState, useEffect, forwardRef} from 'react'
+import {useRef, useEffect} from 'react'
 import emailjs from 'emailjs-com'
 
 export default function MSForm(props){

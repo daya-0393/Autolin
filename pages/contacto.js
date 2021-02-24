@@ -1,11 +1,10 @@
 import Header from '../Components/header'
 import Footer from '../Components/footer'
-import Head from 'next/head'
 import cn from 'classnames'
 import Button from 'react-bootstrap/Button'
 import ContactForm from '../Components/form'
 import styles from '../Components/contact.module.css'
-import { useState, useEffect } from 'react'
+import { useState } from 'react'
 import emailjs from 'emailjs-com'
 
 export default function Contact(){
@@ -34,14 +33,7 @@ export default function Contact(){
       }
 
     function openMap(e){
-        console.log(e.target)
-        if(e.target.name == "waze"){
-            window.open("https://ul.waze.com/ul?ll=9.96221227%2C-84.19421911&navigate=yes&zoom=16&utm_campaign=default&utm_source=waze_website&utm_medium=lm_share_location");
-            console.log(e.target.name)
-        }else if(e.target.name == "maps"){
-            window.open("https://goo.gl/maps/ZBhNgoXJG1EEuX4Z8");
-            console.log(e.target.name)
-        }
+        window.open("https://goo.gl/maps/ZBhNgoXJG1EEuX4Z8");
     }
 
     return(
