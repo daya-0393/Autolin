@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react'
 import Form from 'react-bootstrap/Form'
 import styles from './form.module.css'
 
-export default function Quotation() {
+export default function Quotation(props) {
 
   const [inputName, setInputName] = useState();
   const [inputValue, setInputValue] = useState();

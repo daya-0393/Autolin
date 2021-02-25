@@ -39,9 +39,7 @@ export default function MSForm(props){
                 props.setAlertShown(true);
                 console.log(error.text);
           });
-        form.current.reset()
     }
-
     
     useEffect(()=>{
         if(screen.width <= 700){
@@ -49,6 +47,9 @@ export default function MSForm(props){
         }
     })
     
+    function checkInputFields(){
+
+    }
 
     return (
         <div className={cn("container", "shadow-lg" ,styles.container)} ref={container}>

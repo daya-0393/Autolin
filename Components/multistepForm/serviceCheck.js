@@ -4,7 +4,7 @@ import cn from 'classnames'
 import Form from 'react-bootstrap/Form'
 
 
-export default function ServiceCheck(){
+export default function ServiceCheck(props){
 
   const [inputValue, setInputValue] = useState();
   const onChange = (e) =>{
