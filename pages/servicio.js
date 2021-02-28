@@ -5,6 +5,7 @@ import cn from 'classnames'
 import { useState, useEffect} from 'react'
 import {content} from '../lib/serviceContent'
 import List from '../Components/list'
+import Link from 'next/Link'
 
 
 export default function Servicios() {
@@ -55,7 +56,9 @@ export default function Servicios() {
                         <h1 className={cn("heading", styles.heading)}>{heading}</h1>
                         <p>{text}</p>
                         <List list={list} itemDesc={itemDescription}></List>
-                        <button className={cn("btn btn-success", styles.btn)}>Cotizar servicio</button>
+                        <Link href="/cotizacion">
+                            <button className={cn("btn btn-success", styles.btn)}>Cotizar servicio</button>
+                        </Link>
                     </div>
                 </div>
             </main>
