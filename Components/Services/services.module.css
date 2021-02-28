@@ -1,9 +1,9 @@
 .container{
     width: 100%;
     margin:auto;
-    padding: 5% 0;
+    margin: 3% 0;
 }
-.col{
+.card{
     position: relative;
     width: 20%;
     background-color: white;
@@ -13,7 +13,7 @@
     border-radius: 10px;
     text-align: center;
 }
-.card{
+.cardImg{
     position: relative;
     background-size: cover;
     background-position: bottom;
@@ -45,25 +45,25 @@
     color:#0088cc;
     cursor: pointer;
 }
-.col .btn{
+.card .btn{
     position: absolute;
     bottom: 5%;
     left: 0;
     right: 0;
     text-align: center;
 }
-.col .btn Button{
+.card .btn Button{
     background-color: #046aaf;
     border: #046aaf;
 }
-.card .btnCont{
+.cardImg .btnCont{
     position: absolute;
     display: block;
     width: 100%;
     bottom: 10%;
     text-align: center;
 }
-.card Button{
+.cardImg Button{
     background-color: #0088cc;
     border: #0088cc;
     font-size: 1rem;
@@ -74,7 +74,8 @@
     .container{
         width: 100%;
     }
-    .col{
+    .card{
         width: 100%;
+        margin: 0;
     }
 }

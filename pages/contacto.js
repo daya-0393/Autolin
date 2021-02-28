@@ -16,7 +16,7 @@ export default function Contact(){
     function sendEmail(e) {
         e.preventDefault();
     
-        emailjs.sendForm('service_w7xcwkk', 'template_7sbwshm', e.target, 'user_opD6c7JPY3hWfFA8RPNFD')
+        emailjs.sendForm('service_mhgvbzu', 'template_cy0pbvq', e.target, 'user_ljapuPuwCBJf3oCWtH4WZ')
           .then((result) => {
                 setAlert("alert-success");
                 setMessage("El mensaje ha sido enviado exitosamente");
@@ -47,8 +47,8 @@ export default function Contact(){
                     </div>
                     <div className="row">
                         <div className={styles.info}>
-                            <p><b>Teléfono: </b>+506123456</p>
-                            <p><b>Correo: </b>autolinautomotriz@gmail.com</p>
+                            <p><b>Teléfono: </b>+506 22031985</p>
+                            <p><b>Correo: </b>refaccioneselectrocar@gmail.com</p>
                             <p><b>Dirección: </b>Pozos de Santa Ana, San José</p>
                             <p><b>Horario: </b>Lunes - Domingo, 7:00am - 7:00pm</p>
                         </div>
@@ -68,7 +68,6 @@ export default function Contact(){
                 </div>
             </main>
             <Footer></Footer>
-            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossOrigin="anonymous"></script>
         </div>
     )
 }

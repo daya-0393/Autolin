@@ -1,6 +1,6 @@
 .container{
     width: 50%;
-    margin: auto;
+    margin: 3% auto;
 }
 
 @media(max-width: 450px){

@@ -8,7 +8,6 @@ import {useRouter} from 'next/router'
 
 export default function Service(props){
     const style = {backgroundImage: 'url(' + props.url + ')'}
-    const [btnShown, setBtnShown] = useState(false);
     const [type, setType] = useState("");
     const [listFound, setListFound] = useState();
     const router = useRouter();
@@ -23,8 +22,8 @@ export default function Service(props){
 
     return(
 
-        <div className={cn("col", styles.col)} type={type} onMouseEnter={() => setBtnShown(true)} onMouseLeave={() => setBtnShown(false)}>
-            <div className={styles.card} style={style}></div>
+        <div className={cn("col", styles.card)} type={type}>
+            <div className={styles.cardImg} style={style}></div>
             <div className={styles.text}>
                 <h4>{`${props.title}`}</h4>
                 <p>{props.text}</p>

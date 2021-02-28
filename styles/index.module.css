@@ -30,7 +30,7 @@
     bottom: 3%;
     right: 4%;
     border-radius: 50%;
-    box-shadow: 2px 2px 5px  gray;
+    box-shadow: 2px 2px 5px  rgba(51, 51, 51, 0.5);
 }
 .whatsapp img{
     width: 50px;
@@ -93,10 +93,10 @@
         margin-top: 5rem;
     }
     .cover-info .topHeading{
-        font-size: 4rem;
+        font-size: 3.5rem;
     }
     .cover-info .btmHeading{
-        font-size: 2rem;
+        font-size: 1.9rem;
     }
 }
 
@@ -107,7 +107,7 @@
     .bd-img{
         background-image: url("/images/cover1.1.webp");
         background-position: center;
-        min-height: 550px;
+        min-height: 600px;
         margin-top: 5rem;
     }
     .color-layover{
@@ -120,7 +120,7 @@
     }
     .cover-info{
         width: 100%;
-        bottom: 0%;
+        bottom: 2%;
         top: auto;
     }
     .cover-info h1, .cover-info h2{
@@ -129,15 +129,17 @@
         line-height: 1.5;
     }
     .cover-info .topHeading{
-        font-size: 3rem;
+        font-size: 2.5rem;
     }
     .cover-info .btmHeading{
         font-size: 2rem;
     }
     .cover-info .btn{
+        font-size: 1.1rem;
         margin-top: 5%;
         margin-bottom: 5%;
-        background-color:  #29a329;
+        background-color: #12a0be;
+        border: 0;
     }
     .heading{
         font-size: 3rem;

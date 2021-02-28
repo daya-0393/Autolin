@@ -4,7 +4,7 @@ import cn from 'classnames'
 import Form from 'react-bootstrap/Form'
 
 
-export default function ServiceCheck(props){
+export default function ServiceCheck(){
 
   const [inputValue, setInputValue] = useState();
   const onChange = (e) =>{
@@ -12,7 +12,7 @@ export default function ServiceCheck(props){
   }
 
   useEffect(()=>{
-    localStorage.setItem('service', inputValue);
+    sessionStorage.setItem('service', inputValue);
   }, [inputValue]);
 
   return (
@@ -72,6 +72,5 @@ export default function ServiceCheck(props){
         </div>
       </div>
     </Form>
-
   )
 }

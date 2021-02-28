@@ -4,6 +4,9 @@
     padding: 0.5% 2%;
     min-height: 5rem;
 }
+.navbar-nav{
+    padding-right: 6%;
+}
 
 .navbar-collapse{
     justify-content: flex-end;

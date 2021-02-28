@@ -10,17 +10,19 @@
     width: 40%;
 }
 .alert{
-    width: 80%;
-    float: right;
+    max-width: 550px;
 }
 .button{
     background-color: transparent;
     border: none;
-    border-radius: 100px;
+    border-radius: 50%;
     float: right;
+    width: 3.5rem;
+    height: 3.5rem;
+    padding: 5px;
 }
 .button img{
-    width: 3rem;
+    width: 100%;
 }
 .info{
     width: 80%;
