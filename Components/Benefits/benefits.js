@@ -16,19 +16,19 @@ export default function Benefits(){
             </Benefit>
             <Benefit url="/images/icons/talking.webp">
                 <h2 className={styles.subHeading}>Atención personalizada</h2>
-                <p>Nos encargamos de brindar un servcio especializado, que se ajuste a las necesidades de cada uno de nuestros clientes</p>
+                <p>Nos encargamos de brindar un servcio especializado, que se ajuste a las necesidades de cada uno de nuestros clientes.</p>
             </Benefit>
             <Benefit url="/images/icons/shield.webp">
                 <h2 className={styles.subHeading}>Garantía</h2>
-                <p>Todos nuestros trabajos cuentan con un respaldo, asegurandonos de que cada uno de nuestros clientes quede satisfecho con nuestro trabajo.</p>
+                <p>100% comprometidos a brindar excelentes resultados en cada uno de nuestros trabajos.</p>
             </Benefit>
             <Benefit url="/images/icons/innovation.webp">
                 <h2 className={styles.subHeading}>Innovación</h2>
-                <p>Constantemente estamos innovando para ofrecer un servicio con lo ultimo en el mercado.</p>
+                <p>Constantemente estamos innovando para ofrecer en cada uno de nuestros servicios lo ultimo en el mercado.</p>
             </Benefit>
             <Benefit url="/images/icons/star.webp">
                 <h2 className={styles.subHeading}>Calidad</h2>
-                <p>Ofrecemos un servicio de alta calidad, procurando que nuestro trabajo sobre pase las espectativas de nuestros trabajos.</p>
+                <p>Ofrecemos un servicio de alta calidad, procurando siempre que nuestro trabajo sobrepase las espectativas de nuestros clientes.</p>
             </Benefit>
             
         </div>
